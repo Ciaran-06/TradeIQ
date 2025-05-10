@@ -1,4 +1,4 @@
-# Mean-Variance-Opt — Quant Research & Trading Dashboard
+#TradeIQ — Quant Research & Trading Dashboard
 
 > **Quant dashboard for research, analytics, and strategy development**
 > Built in C++17 with Python & React interfaces, powered by Tiingo data.
@@ -29,9 +29,9 @@ Build and test portfolio strategies with:
 ## 📂 Project Structure
 
 ```
-Mean-Variance-Opt/
+TradeIQ/
 ├── src/
-│   ├── api/alphavantage.h/.cpp      # data fetching (Tiingo, switchable)
+│   ├── api/tiingo.h/.cpp      # data fetching (Tiingo, switchable)
 │   ├── core/                        # stats + optimisation engine
 │   ├── utils/                       # helper functions
 ├── tests/                           # Catch2 test suite
@@ -49,8 +49,8 @@ Mean-Variance-Opt/
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/yourname/Mean-Variance-Opt.git
-cd Mean-Variance-Opt
+git clone https://github.com/Ciaran-06/TradeIQ.git
+cd TradeIQ
 ```
 
 2. Add your `.env` file:
