@@ -1,0 +1,4 @@
+#ifdef STRATEGY_ENGINE_HPP
+#define STRATEGY_ENGINE_HPP
+
+#endif
