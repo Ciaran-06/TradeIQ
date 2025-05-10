@@ -31,7 +31,9 @@ target_link_libraries(main PRIVATE
 # === Test Executable ===
 add_executable(tests
     tests/test_tiingo_client.cpp
+    tests/test_stats_engine.cpp
     src/core/price_series.cpp
+    src/core/stats_engine.cpp
     src/api/tiingo_client.cpp
 )
 

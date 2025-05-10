@@ -10,6 +10,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp" "CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o" "gcc" "CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o.d"
   "/Users/ciarangaffney/TradeIQ/src/core/price_series.cpp" "CMakeFiles/tests.dir/src/core/price_series.cpp.o" "gcc" "CMakeFiles/tests.dir/src/core/price_series.cpp.o.d"
+  "/Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp" "CMakeFiles/tests.dir/src/core/stats_engine.cpp.o" "gcc" "CMakeFiles/tests.dir/src/core/stats_engine.cpp.o.d"
+  "/Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp" "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o.d"
   "/Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp" "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o" "gcc" "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o.d"
   )
 

@@ -230,6 +230,54 @@ src/core/price_series.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/price_series.cpp.s
 .PHONY : src/core/price_series.cpp.s
 
+src/core/stats_engine.o: src/core/stats_engine.cpp.o
+.PHONY : src/core/stats_engine.o
+
+# target to build an object file
+src/core/stats_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/stats_engine.cpp.o
+.PHONY : src/core/stats_engine.cpp.o
+
+src/core/stats_engine.i: src/core/stats_engine.cpp.i
+.PHONY : src/core/stats_engine.i
+
+# target to preprocess a source file
+src/core/stats_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/stats_engine.cpp.i
+.PHONY : src/core/stats_engine.cpp.i
+
+src/core/stats_engine.s: src/core/stats_engine.cpp.s
+.PHONY : src/core/stats_engine.s
+
+# target to generate assembly for a file
+src/core/stats_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/stats_engine.cpp.s
+.PHONY : src/core/stats_engine.cpp.s
+
+tests/test_stats_engine.o: tests/test_stats_engine.cpp.o
+.PHONY : tests/test_stats_engine.o
+
+# target to build an object file
+tests/test_stats_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o
+.PHONY : tests/test_stats_engine.cpp.o
+
+tests/test_stats_engine.i: tests/test_stats_engine.cpp.i
+.PHONY : tests/test_stats_engine.i
+
+# target to preprocess a source file
+tests/test_stats_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_stats_engine.cpp.i
+.PHONY : tests/test_stats_engine.cpp.i
+
+tests/test_stats_engine.s: tests/test_stats_engine.cpp.s
+.PHONY : tests/test_stats_engine.s
+
+# target to generate assembly for a file
+tests/test_stats_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s
+.PHONY : tests/test_stats_engine.cpp.s
+
 tests/test_tiingo_client.o: tests/test_tiingo_client.cpp.o
 .PHONY : tests/test_tiingo_client.o
 
@@ -274,6 +322,12 @@ help:
 	@echo "... src/core/price_series.o"
 	@echo "... src/core/price_series.i"
 	@echo "... src/core/price_series.s"
+	@echo "... src/core/stats_engine.o"
+	@echo "... src/core/stats_engine.i"
+	@echo "... src/core/stats_engine.s"
+	@echo "... tests/test_stats_engine.o"
+	@echo "... tests/test_stats_engine.i"
+	@echo "... tests/test_stats_engine.s"
 	@echo "... tests/test_tiingo_client.o"
 	@echo "... tests/test_tiingo_client.i"
 	@echo "... tests/test_tiingo_client.s"
