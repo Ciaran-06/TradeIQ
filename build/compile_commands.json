@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/external/dotenv-cpp/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/main.dir/main.cpp.o -c /Users/ciarangaffney/TradeIQ/main.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/main.cpp",
+  "output": "CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/external/dotenv-cpp/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/main.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
+  "output": "CMakeFiles/main.dir/src/core/price_series.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/external/dotenv-cpp/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/main.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
+  "output": "CMakeFiles/main.dir/src/api/tiingo_client.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/external/dotenv-cpp/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/external/dotenv-cpp/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/tests.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
+  "output": "CMakeFiles/tests.dir/src/core/price_series.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/external/dotenv-cpp/include -isystem /opt/homebrew/include -std=gnu++20 -arch arm64 -o CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
+  "output": "CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o"
+}
+]
