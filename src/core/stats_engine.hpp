@@ -12,5 +12,8 @@ public:
     static double portfolioVariance(
     const std::vector<std::vector<double>>& covMatrix,
     const std::vector<double>& weights);
-
+    static double expectedPortfolioReturn(const std::vector<double>& meanReturns, const std::vector<double>& weights);
+    static double computeSharpeRatio(double expectedPortfolioReturn,double portfolioVariance,double riskFreeRate);
+    static double computeSortinoRatio(double expectedPortfolioReturn, double riskFreeReturn, const std::vector<double>& portfolioReturns);
+    static double computeMaxDrawdown(const std::vector<double>& cumulativeReturns);
 };

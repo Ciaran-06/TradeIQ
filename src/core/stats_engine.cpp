@@ -123,3 +123,90 @@ std::vector<std::vector<double>> covarianceMatrix(const std::vector<PriceSeries>
     }
     return covMatrix;
 }
+
+double StatsEngine::portfolioVariance(
+    const std::vector<std::vector<double>> &covMatrix,
+    const std::vector<double> &weights)
+{
+    double variance = 0.0;
+    size_t n = weights.size();
+    for (size_t i = 0; i < n; ++i)
+    {
+        for (size_t j = 0; j < n; ++j)
+        {
+            variance += weights[i] * covMatrix[i][j] * weights[j];
+        }
+    }
+    return variance;
+}
+
+double StatsEngine::expectedPortfolioReturn(
+    const std::vector<double> &meanReturns,
+    const std::vector<double> &weights)
+{
+    double expectedReturn = 0.0;
+    for (size_t i = 0; i < weights.size(); ++i)
+    {
+        expectedReturn += weights[i] * meanReturns[i];
+    }
+    return expectedReturn;
+}
+
+double StatsEngine::computeSharpeRatio(
+    double expectedPortfolioReturn,
+    double portfolioVariance,
+    double riskFreeRate)
+{
+
+    return (expectedPortfolioReturn - riskFreeRate) / sqrt(portfolioVariance);
+}
+
+double StatsEngine::computeSortinoRatio(
+    double expectedPortfolioReturn,
+    double riskFreeReturn,
+    const std::vector<double> &portfolioReturns)
+{
+    double sumSquared = 0.0;
+    size_t count = 0;
+
+    for (double r : portfolioReturns)
+    {
+        if (r < riskFreeReturn)
+        {
+            sumSquared += (r - riskFreeReturn) * (r - riskFreeReturn);
+            ++count;
+        }
+    }
+
+    if (count == 0)
+    {
+        return 0.0; // No downside deviation — handle gracefully
+    }
+
+    double downsideDeviation = std::sqrt(sumSquared / count);
+    return (expectedPortfolioReturn - riskFreeReturn) / downsideDeviation;
+}
+
+double StatsEngine::computeMaxDrawdown(const std::vector<double> &cumulativeReturns)
+{
+    double runningPeak = 0.0;
+    double maxDownturn = 0.0;
+
+    for (const auto &r : cumulativeReturns)
+    {
+        if (r > runningPeak)
+        {
+            runningPeak = r;
+        }
+        else
+        {
+            double currentDrawdown = (runningPeak - r) / runningPeak;
+            if (currentDrawdown > maxDownturn)
+            {
+                maxDownturn = currentDrawdown;
+            }
+        }
+    }
+
+    return maxDownturn;
+}

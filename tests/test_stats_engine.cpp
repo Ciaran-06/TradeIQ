@@ -61,3 +61,54 @@ TEST_CASE("Covariance matrix - perfect correlation", "[stats]") {
     REQUIRE(matrix[0][1] == Catch::Approx(matrix[1][0]));
     REQUIRE(matrix[0][0] == Catch::Approx(matrix[0][1])); // perfect correlation
 }
+
+TEST_CASE("Portfolio variance is computed correctly", "[portfolio][variance]") {
+    std::vector<std::vector<double>> covMatrix = {
+        {0.01, 0.005},
+        {0.005, 0.02}
+    };
+
+    std::vector<double> weights = {0.5, 0.5};
+
+    double variance = StatsEngine::portfolioVariance(covMatrix, weights);
+
+    REQUIRE(variance == Catch::Approx(0.01).epsilon(1e-6));
+}
+
+
+TEST_CASE("Expected portfolio return is computed correctly", "[portfolio][return]") {
+    std::vector<double> meanReturns = {0.01, 0.03};
+    std::vector<double> weights = {0.5, 0.5};
+
+    double result = StatsEngine::expectedPortfolioReturn(meanReturns, weights);
+
+    REQUIRE(result == Catch::Approx(0.02).epsilon(1e-6));
+}
+
+TEST_CASE("Sharpe ratio is calculated correctly", "[sharpe]") {
+    double expectedReturn = 0.10;
+    double variance = 0.04;
+    double riskFree = 0.02;
+
+    double result = StatsEngine::computeSharpeRatio(expectedReturn, variance, riskFree);
+
+    REQUIRE(result == Catch::Approx(0.4).epsilon(1e-6));
+}
+
+TEST_CASE("Sortino ratio is computed correctly", "[sortino]") {
+    std::vector<double> returns = {0.01, 0.03, -0.02, -0.01, 0.04};
+    double expectedReturn = 0.01;
+    double riskFree = 0.0;
+
+    double result = StatsEngine::computeSortinoRatio(expectedReturn, riskFree, returns);
+
+    REQUIRE(result == Catch::Approx(0.632).epsilon(0.001));
+}
+
+TEST_CASE("Max drawdown is computed correctly", "[drawdown]") {
+    std::vector<double> cumulativeReturns = {1.0, 1.1, 0.95, 0.92, 1.05, 1.2, 1.0};
+
+    double result = StatsEngine::computeMaxDrawdown(cumulativeReturns);
+
+    REQUIRE(result == Catch::Approx(1.0 / 6.0).epsilon(0.00001));
+}
