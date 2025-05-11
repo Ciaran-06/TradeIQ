@@ -7,8 +7,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/src/core/stats_engine.cpp.o.d"
   "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
   "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o.d"
-  "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o"
-  "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o.d"
   "tests"
   "tests.pdb"
 )

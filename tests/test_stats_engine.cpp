@@ -112,3 +112,31 @@ TEST_CASE("Max drawdown is computed correctly", "[drawdown]") {
 
     REQUIRE(result == Catch::Approx(1.0 / 6.0).epsilon(0.00001));
 }
+
+TEST_CASE("Rolling volatility is computed correctly", "[rolling][volatility]") {
+    std::vector<double> returns = {1.0, 2.0, 3.0, 2.0, 1.0};
+    int windowSize = 3;
+
+    std::vector<double> result = StatsEngine::computeRollingVolatility(returns, windowSize);
+
+    REQUIRE(result.size() == 3);
+    REQUIRE(result[0] == Catch::Approx(0.8165).epsilon(0.001));
+    REQUIRE(result[1] == Catch::Approx(0.471).epsilon(0.001));
+    REQUIRE(result[2] == Catch::Approx(0.8165).epsilon(0.001));
+}
+
+#include <catch2/catch.hpp>
+#include "core/stats_engine.hpp"
+
+TEST_CASE("Rolling Sharpe ratio is computed correctly", "[rolling][sharpe]") {
+    std::vector<double> returns = {1.0, 2.0, 3.0, 2.0, 1.0};
+    int windowSize = 3;
+    double riskFreeRate = 0.0;
+
+    std::vector<double> result = StatsEngine::computeRollingSharpe(returns, windowSize, riskFreeRate);
+
+    REQUIRE(result.size() == 3);
+    REQUIRE(result[0] == Catch::Approx(2.45).epsilon(0.01));
+    REQUIRE(result[1] == Catch::Approx(4.94).epsilon(0.01));
+    REQUIRE(result[2] == Catch::Approx(2.45).epsilon(0.01));
+}

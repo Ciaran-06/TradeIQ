@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/api/tiingo_client.cpp.o.d"
   "CMakeFiles/main.dir/src/core/price_series.cpp.o"
   "CMakeFiles/main.dir/src/core/price_series.cpp.o.d"
+  "CMakeFiles/main.dir/src/core/stats_engine.cpp.o"
+  "CMakeFiles/main.dir/src/core/stats_engine.cpp.o.d"
   "main"
   "main.pdb"
 )

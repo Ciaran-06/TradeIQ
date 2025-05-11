@@ -210,3 +210,41 @@ double StatsEngine::computeMaxDrawdown(const std::vector<double> &cumulativeRetu
 
     return maxDownturn;
 }
+
+std::vector<double> StatsEngine::computeRollingSharpe(const std::vector<double> &returns,
+                                                      int windowSize,
+                                                      double riskFreeRate)
+{
+    std::vector<double> rollingSharpe;
+
+    if (returns.size() < windowSize || windowSize <= 1)
+        return rollingSharpe;
+
+    for (size_t i = windowSize - 1; i < returns.size(); ++i)
+    {
+        double sum = 0.0;
+        for (int j = 0; j < windowSize; ++j)
+        {
+            sum += returns[i - j];
+        }
+        double mean = sum / windowSize;
+
+        double squaredDiff = 0.0;
+        for (int j = 0; j < windowSize; ++j)
+        {
+            double diff = returns[i - j] - mean;
+            squaredDiff += diff * diff;
+        }
+        double stddev = std::sqrt(squaredDiff / windowSize); 
+
+        double sharpe = 0.0;
+        if (stddev != 0.0)
+        {
+            sharpe = (mean - riskFreeRate) / stddev;
+        }
+
+        rollingSharpe.push_back(sharpe);
+    }
+
+    return rollingSharpe;
+}

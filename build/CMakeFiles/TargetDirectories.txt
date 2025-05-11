@@ -1,5 +1,4 @@
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/main.dir
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/tests.dir
-/Users/ciarangaffney/TradeIQ/build/CMakeFiles/test.dir
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/edit_cache.dir
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/rebuild_cache.dir

@@ -65,16 +65,6 @@ CMAKE_BINARY_DIR = /Users/ciarangaffney/TradeIQ/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/opt/homebrew/bin/ctest $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -235,6 +225,7 @@ src/core/stats_engine.o: src/core/stats_engine.cpp.o
 
 # target to build an object file
 src/core/stats_engine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/stats_engine.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/stats_engine.cpp.o
 .PHONY : src/core/stats_engine.cpp.o
 
@@ -243,6 +234,7 @@ src/core/stats_engine.i: src/core/stats_engine.cpp.i
 
 # target to preprocess a source file
 src/core/stats_engine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/stats_engine.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/stats_engine.cpp.i
 .PHONY : src/core/stats_engine.cpp.i
 
@@ -251,6 +243,7 @@ src/core/stats_engine.s: src/core/stats_engine.cpp.s
 
 # target to generate assembly for a file
 src/core/stats_engine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/core/stats_engine.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/src/core/stats_engine.cpp.s
 .PHONY : src/core/stats_engine.cpp.s
 
@@ -278,30 +271,6 @@ tests/test_stats_engine.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s
 .PHONY : tests/test_stats_engine.cpp.s
 
-tests/test_tiingo_client.o: tests/test_tiingo_client.cpp.o
-.PHONY : tests/test_tiingo_client.o
-
-# target to build an object file
-tests/test_tiingo_client.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o
-.PHONY : tests/test_tiingo_client.cpp.o
-
-tests/test_tiingo_client.i: tests/test_tiingo_client.cpp.i
-.PHONY : tests/test_tiingo_client.i
-
-# target to preprocess a source file
-tests/test_tiingo_client.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i
-.PHONY : tests/test_tiingo_client.cpp.i
-
-tests/test_tiingo_client.s: tests/test_tiingo_client.cpp.s
-.PHONY : tests/test_tiingo_client.s
-
-# target to generate assembly for a file
-tests/test_tiingo_client.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s
-.PHONY : tests/test_tiingo_client.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -310,7 +279,6 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... main"
 	@echo "... tests"
 	@echo "... main.o"
@@ -328,9 +296,6 @@ help:
 	@echo "... tests/test_stats_engine.o"
 	@echo "... tests/test_stats_engine.i"
 	@echo "... tests/test_stats_engine.s"
-	@echo "... tests/test_tiingo_client.o"
-	@echo "... tests/test_tiingo_client.i"
-	@echo "... tests/test_tiingo_client.s"
 .PHONY : help
 
 

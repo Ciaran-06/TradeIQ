@@ -86,24 +86,10 @@ CMakeFiles/main.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/main.cpp -o CMakeFiles/main.dir/main.cpp.s
 
-CMakeFiles/main.dir/src/core/price_series.cpp.o: CMakeFiles/main.dir/flags.make
-CMakeFiles/main.dir/src/core/price_series.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp
-CMakeFiles/main.dir/src/core/price_series.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/core/price_series.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/price_series.cpp.o -MF CMakeFiles/main.dir/src/core/price_series.cpp.o.d -o CMakeFiles/main.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp
-
-CMakeFiles/main.dir/src/core/price_series.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/price_series.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp > CMakeFiles/main.dir/src/core/price_series.cpp.i
-
-CMakeFiles/main.dir/src/core/price_series.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/price_series.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp -o CMakeFiles/main.dir/src/core/price_series.cpp.s
-
 CMakeFiles/main.dir/src/api/tiingo_client.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/api/tiingo_client.cpp.o: /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
 CMakeFiles/main.dir/src/api/tiingo_client.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/api/tiingo_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/api/tiingo_client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/api/tiingo_client.cpp.o -MF CMakeFiles/main.dir/src/api/tiingo_client.cpp.o.d -o CMakeFiles/main.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
 
 CMakeFiles/main.dir/src/api/tiingo_client.cpp.i: cmake_force
@@ -114,24 +100,54 @@ CMakeFiles/main.dir/src/api/tiingo_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/api/tiingo_client.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp -o CMakeFiles/main.dir/src/api/tiingo_client.cpp.s
 
+CMakeFiles/main.dir/src/core/stats_engine.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/core/stats_engine.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp
+CMakeFiles/main.dir/src/core/stats_engine.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/core/stats_engine.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/stats_engine.cpp.o -MF CMakeFiles/main.dir/src/core/stats_engine.cpp.o.d -o CMakeFiles/main.dir/src/core/stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp
+
+CMakeFiles/main.dir/src/core/stats_engine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/stats_engine.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp > CMakeFiles/main.dir/src/core/stats_engine.cpp.i
+
+CMakeFiles/main.dir/src/core/stats_engine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/stats_engine.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp -o CMakeFiles/main.dir/src/core/stats_engine.cpp.s
+
+CMakeFiles/main.dir/src/core/price_series.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/core/price_series.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp
+CMakeFiles/main.dir/src/core/price_series.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/core/price_series.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/core/price_series.cpp.o -MF CMakeFiles/main.dir/src/core/price_series.cpp.o.d -o CMakeFiles/main.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp
+
+CMakeFiles/main.dir/src/core/price_series.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/core/price_series.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp > CMakeFiles/main.dir/src/core/price_series.cpp.i
+
+CMakeFiles/main.dir/src/core/price_series.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/core/price_series.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp -o CMakeFiles/main.dir/src/core/price_series.cpp.s
+
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.cpp.o" \
-"CMakeFiles/main.dir/src/core/price_series.cpp.o" \
-"CMakeFiles/main.dir/src/api/tiingo_client.cpp.o"
+"CMakeFiles/main.dir/src/api/tiingo_client.cpp.o" \
+"CMakeFiles/main.dir/src/core/stats_engine.cpp.o" \
+"CMakeFiles/main.dir/src/core/price_series.cpp.o"
 
 # External object files for target main
 main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/main.cpp.o
-main: CMakeFiles/main.dir/src/core/price_series.cpp.o
 main: CMakeFiles/main.dir/src/api/tiingo_client.cpp.o
+main: CMakeFiles/main.dir/src/core/stats_engine.cpp.o
+main: CMakeFiles/main.dir/src/core/price_series.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: /usr/local/lib/libcpr.a
 main: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 main: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
