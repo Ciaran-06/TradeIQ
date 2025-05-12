@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tests.dir/tests/test_math_utils.cpp.o"
+  "CMakeFiles/tests.dir/tests/test_math_utils.cpp.o.d"
   "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
   "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o.d"
   "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o"

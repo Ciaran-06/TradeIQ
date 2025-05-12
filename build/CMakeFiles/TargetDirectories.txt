@@ -1,4 +1,5 @@
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/core.dir
+/Users/ciarangaffney/TradeIQ/build/CMakeFiles/math_utils.dir
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/api.dir
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/cli_utils.dir
 /Users/ciarangaffney/TradeIQ/build/CMakeFiles/main.dir

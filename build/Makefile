@@ -140,6 +140,19 @@ core/fast:
 .PHONY : core/fast
 
 #=============================================================================
+# Target rules for targets named math_utils
+
+# Build rule for target.
+math_utils: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 math_utils
+.PHONY : math_utils
+
+# fast build rule for target.
+math_utils/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/build
+.PHONY : math_utils/fast
+
+#=============================================================================
 # Target rules for targets named api
 
 # Build rule for target.
@@ -723,6 +736,54 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/utils/math_utils.o: src/utils/math_utils.cpp.o
+.PHONY : src/utils/math_utils.o
+
+# target to build an object file
+src/utils/math_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/src/utils/math_utils.cpp.o
+.PHONY : src/utils/math_utils.cpp.o
+
+src/utils/math_utils.i: src/utils/math_utils.cpp.i
+.PHONY : src/utils/math_utils.i
+
+# target to preprocess a source file
+src/utils/math_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/src/utils/math_utils.cpp.i
+.PHONY : src/utils/math_utils.cpp.i
+
+src/utils/math_utils.s: src/utils/math_utils.cpp.s
+.PHONY : src/utils/math_utils.s
+
+# target to generate assembly for a file
+src/utils/math_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/src/utils/math_utils.cpp.s
+.PHONY : src/utils/math_utils.cpp.s
+
+tests/test_math_utils.o: tests/test_math_utils.cpp.o
+.PHONY : tests/test_math_utils.o
+
+# target to build an object file
+tests/test_math_utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_math_utils.cpp.o
+.PHONY : tests/test_math_utils.cpp.o
+
+tests/test_math_utils.i: tests/test_math_utils.cpp.i
+.PHONY : tests/test_math_utils.i
+
+# target to preprocess a source file
+tests/test_math_utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_math_utils.cpp.i
+.PHONY : tests/test_math_utils.cpp.i
+
+tests/test_math_utils.s: tests/test_math_utils.cpp.s
+.PHONY : tests/test_math_utils.s
+
+# target to generate assembly for a file
+tests/test_math_utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/tests/test_math_utils.cpp.s
+.PHONY : tests/test_math_utils.cpp.s
+
 tests/test_stats_engine.o: tests/test_stats_engine.cpp.o
 .PHONY : tests/test_stats_engine.o
 
@@ -812,6 +873,7 @@ help:
 	@echo "... cli_utils"
 	@echo "... core"
 	@echo "... main"
+	@echo "... math_utils"
 	@echo "... tests"
 	@echo "... src/api/default_http_client.o"
 	@echo "... src/api/default_http_client.i"
@@ -834,6 +896,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/utils/math_utils.o"
+	@echo "... src/utils/math_utils.i"
+	@echo "... src/utils/math_utils.s"
+	@echo "... tests/test_math_utils.o"
+	@echo "... tests/test_math_utils.i"
+	@echo "... tests/test_math_utils.s"
 	@echo "... tests/test_stats_engine.o"
 	@echo "... tests/test_stats_engine.i"
 	@echo "... tests/test_stats_engine.s"

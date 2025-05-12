@@ -1,56 +1,68 @@
 [
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/core.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/math_utils.dir/src/utils/math_utils.cpp.o -c /Users/ciarangaffney/TradeIQ/src/utils/math_utils.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/src/utils/math_utils.cpp",
+  "output": "CMakeFiles/math_utils.dir/src/utils/math_utils.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/core.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/core/price_series.cpp",
   "output": "CMakeFiles/core.dir/src/core/price_series.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/core.dir/src/core/stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/core.dir/src/core/stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp",
   "output": "CMakeFiles/core.dir/src/core/stats_engine.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/core.dir/src/core/strategy_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/strategy_engine.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/core.dir/src/core/strategy_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/strategy_engine.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/core/strategy_engine.cpp",
   "output": "CMakeFiles/core.dir/src/core/strategy_engine.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/api.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/api.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp",
   "output": "CMakeFiles/api.dir/src/api/tiingo_client.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/api.dir/src/api/default_http_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/api.dir/src/api/default_http_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp",
   "output": "CMakeFiles/api.dir/src/api/default_http_client.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/cli_utils.dir/src/cli/matrix_printer.cpp.o -c /Users/ciarangaffney/TradeIQ/src/cli/matrix_printer.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/cli_utils.dir/src/cli/matrix_printer.cpp.o -c /Users/ciarangaffney/TradeIQ/src/cli/matrix_printer.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/cli/matrix_printer.cpp",
   "output": "CMakeFiles/cli_utils.dir/src/cli/matrix_printer.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/ciarangaffney/TradeIQ/src/main.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/main.dir/src/main.cpp.o -c /Users/ciarangaffney/TradeIQ/src/main.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/src/main.cpp",
   "output": "CMakeFiles/main.dir/src/main.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp",
   "output": "CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o"
 },
 {
   "directory": "/Users/ciarangaffney/TradeIQ/build",
-  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -std=gnu++17 -arch arm64 -o CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp",
   "file": "/Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp",
   "output": "CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
+},
+{
+  "directory": "/Users/ciarangaffney/TradeIQ/build",
+  "command": "/usr/bin/c++  -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils -std=gnu++17 -arch arm64 -o CMakeFiles/tests.dir/tests/test_math_utils.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_math_utils.cpp",
+  "file": "/Users/ciarangaffney/TradeIQ/tests/test_math_utils.cpp",
+  "output": "CMakeFiles/tests.dir/tests/test_math_utils.cpp.o"
 }
 ]

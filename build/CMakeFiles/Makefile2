@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /Users/ciarangaffney/TradeIQ/build
 
 # The main recursive "all" target.
 all: CMakeFiles/core.dir/all
+all: CMakeFiles/math_utils.dir/all
 all: CMakeFiles/api.dir/all
 all: CMakeFiles/cli_utils.dir/all
 all: CMakeFiles/main.dir/all
@@ -72,6 +73,7 @@ all: CMakeFiles/tests.dir/all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/core.dir/codegen
+codegen: CMakeFiles/math_utils.dir/codegen
 codegen: CMakeFiles/api.dir/codegen
 codegen: CMakeFiles/cli_utils.dir/codegen
 codegen: CMakeFiles/main.dir/codegen
@@ -84,6 +86,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/core.dir/clean
+clean: CMakeFiles/math_utils.dir/clean
 clean: CMakeFiles/api.dir/clean
 clean: CMakeFiles/cli_utils.dir/clean
 clean: CMakeFiles/main.dir/clean
@@ -122,7 +125,7 @@ clean: CMakeFiles/ContinuousSubmit.dir/clean
 # Target rules for target CMakeFiles/core.dir
 
 # All Build rule for target.
-CMakeFiles/core.dir/all:
+CMakeFiles/core.dir/all: CMakeFiles/math_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=6,7,8,9 "Built target core"
@@ -130,7 +133,7 @@ CMakeFiles/core.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 0
 .PHONY : CMakeFiles/core.dir/rule
@@ -151,10 +154,43 @@ CMakeFiles/core.dir/clean:
 .PHONY : CMakeFiles/core.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/math_utils.dir
+
+# All Build rule for target.
+CMakeFiles/math_utils.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=12,13 "Built target math_utils"
+.PHONY : CMakeFiles/math_utils.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/math_utils.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/math_utils.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 0
+.PHONY : CMakeFiles/math_utils.dir/rule
+
+# Convenience name for target.
+math_utils: CMakeFiles/math_utils.dir/rule
+.PHONY : math_utils
+
+# codegen rule for target.
+CMakeFiles/math_utils.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=12,13 "Finished codegen for target math_utils"
+.PHONY : CMakeFiles/math_utils.dir/codegen
+
+# clean rule for target.
+CMakeFiles/math_utils.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/math_utils.dir/build.make CMakeFiles/math_utils.dir/clean
+.PHONY : CMakeFiles/math_utils.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/api.dir
 
 # All Build rule for target.
 CMakeFiles/api.dir/all: CMakeFiles/core.dir/all
+CMakeFiles/api.dir/all: CMakeFiles/math_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/api.dir/build.make CMakeFiles/api.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/api.dir/build.make CMakeFiles/api.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=1,2,3 "Built target api"
@@ -162,7 +198,7 @@ CMakeFiles/api.dir/all: CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/api.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/api.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 0
 .PHONY : CMakeFiles/api.dir/rule
@@ -187,6 +223,7 @@ CMakeFiles/api.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/cli_utils.dir/all: CMakeFiles/core.dir/all
+CMakeFiles/cli_utils.dir/all: CMakeFiles/math_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_utils.dir/build.make CMakeFiles/cli_utils.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cli_utils.dir/build.make CMakeFiles/cli_utils.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=4,5 "Built target cli_utils"
@@ -194,7 +231,7 @@ CMakeFiles/cli_utils.dir/all: CMakeFiles/core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cli_utils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cli_utils.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 0
 .PHONY : CMakeFiles/cli_utils.dir/rule
@@ -219,6 +256,7 @@ CMakeFiles/cli_utils.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/main.dir/all: CMakeFiles/core.dir/all
+CMakeFiles/main.dir/all: CMakeFiles/math_utils.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/api.dir/all
 CMakeFiles/main.dir/all: CMakeFiles/cli_utils.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/depend
@@ -228,7 +266,7 @@ CMakeFiles/main.dir/all: CMakeFiles/cli_utils.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 0
 .PHONY : CMakeFiles/main.dir/rule
@@ -253,15 +291,16 @@ CMakeFiles/main.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/tests.dir/all: CMakeFiles/core.dir/all
+CMakeFiles/tests.dir/all: CMakeFiles/math_utils.dir/all
 CMakeFiles/tests.dir/all: CMakeFiles/api.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=12,13,14 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=14,15,16,17 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ciarangaffney/TradeIQ/build/CMakeFiles 0
 .PHONY : CMakeFiles/tests.dir/rule
@@ -273,7 +312,7 @@ tests: CMakeFiles/tests.dir/rule
 # codegen rule for target.
 CMakeFiles/tests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=12,13,14 "Finished codegen for target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=14,15,16,17 "Finished codegen for target tests"
 .PHONY : CMakeFiles/tests.dir/codegen
 
 # clean rule for target.

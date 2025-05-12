@@ -12,6 +12,7 @@ find_package(Catch2 3 REQUIRED)
 # Include dirs
 include_directories(src)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/external)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/utils)
 
 # Core library
 add_library(core
@@ -19,6 +20,13 @@ add_library(core
     src/core/stats_engine.cpp
     src/core/strategy_engine.cpp
 )
+
+# Math utilities library
+add_library(math_utils
+    src/utils/math_utils.cpp
+)
+
+target_link_libraries(core PUBLIC math_utils)
 
 # API library
 add_library(api
@@ -48,12 +56,14 @@ enable_testing()
 add_executable(tests
     tests/test_tiingo_client.cpp
     tests/test_stats_engine.cpp
+    tests/test_math_utils.cpp
 )
 
 target_link_libraries(tests
     PRIVATE
     api
     core
+    math_utils
     Catch2::Catch2WithMain
 )
 

@@ -66,54 +66,6 @@ std::vector<std::vector<double>> StatsEngine::covarianceMatrix(const std::vector
     return matrix;
 }
 
-std::vector<std::vector<double>> covarianceMatrix(const std::vector<PriceSeries> &seriesList)
-{
-
-    std::vector<std::vector<double>> allReturns;
-    std::vector<double> means;
-
-    for (const auto &series : seriesList)
-    {
-        std::vector<double> returns = StatsEngine::computeDailyReturns(series);
-        allReturns.push_back(returns);
-    }
-
-    for (const auto &returns : allReturns)
-    {
-        double sum = 0.0;
-        for (double r : returns)
-        {
-            sum += r;
-        }
-
-        double mean = sum / returns.size();
-        means.push_back(mean);
-    }
-
-    size_t n = allReturns.size();
-    std::vector<std::vector<double>> covMatrix(n, std::vector<double>(n, 0.0));
-
-    for (size_t i = 0; i < n; ++i)
-    {
-        for (size_t j = 0; j < n; ++j)
-        {
-            const auto &xi = allReturns[i];
-            const auto &xj = allReturns[j];
-            double mean_i = means[i];
-            double mean_j = means[j];
-
-            double sum = 0.0;
-            size_t T = std::min(xi.size(), xj.size()); // ensure they’re same length
-            for (size_t t = 0; t < T; ++t)
-            {
-                sum += (xi[t] - mean_i) * (xj[t] - mean_j);
-            }
-            covMatrix[i][j] = sum / (T - 1); // sample covariance
-        }
-    }
-    return covMatrix;
-}
-
 double StatsEngine::portfolioVariance(
     const std::vector<std::vector<double>> &covMatrix,
     const std::vector<double> &weights)
