@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/src/core -isystem /opt/homebrew/include
+CXX_INCLUDES = -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
 

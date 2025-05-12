@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcore.a CMakeFiles/core.dir/src/core/price_series.cpp.o CMakeFiles/core.dir/src/core/stats_engine.cpp.o CMakeFiles/core.dir/src/core/strategy_engine.cpp.o
+/usr/bin/ranlib libcore.a

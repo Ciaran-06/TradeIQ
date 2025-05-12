@@ -8,10 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ciarangaffney/TradeIQ/main.cpp" "CMakeFiles/main.dir/main.cpp.o" "gcc" "CMakeFiles/main.dir/main.cpp.o.d"
-  "/Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp" "CMakeFiles/main.dir/src/api/tiingo_client.cpp.o" "gcc" "CMakeFiles/main.dir/src/api/tiingo_client.cpp.o.d"
-  "/Users/ciarangaffney/TradeIQ/src/core/price_series.cpp" "CMakeFiles/main.dir/src/core/price_series.cpp.o" "gcc" "CMakeFiles/main.dir/src/core/price_series.cpp.o.d"
-  "/Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp" "CMakeFiles/main.dir/src/core/stats_engine.cpp.o" "gcc" "CMakeFiles/main.dir/src/core/stats_engine.cpp.o.d"
+  "/Users/ciarangaffney/TradeIQ/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

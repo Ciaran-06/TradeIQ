@@ -1,14 +1,17 @@
-#include <cpr/cpr.h>
 #include <fstream>
 #include <filesystem>
 #include <regex>
 #include <stdexcept>
 #include <chrono>
 #include <thread>
+#include <memory>
 
+#include <cpr/cpr.h>
 #include "../external/dotenv.h"
 #include "../external/json.hpp"
-#include "tiingo_client.hpp"
+#include "api/tiingo_client.hpp"
+#include "api/http_client.hpp"
+#include "api/default_http_client.hpp"
 
 using json = nlohmann::json;
 namespace fs = std::filesystem;
@@ -36,22 +39,32 @@ bool isValidDate(const std::string &dateStr)
 
 TiingoClient::TiingoClient()
 {
-    dotenv::init("../.env");
+    fs::path envPath = fs::current_path() / ".env";
+    if (!fs::exists(envPath))
+    {
+        // Try project root fallback (if running from build/ or bin/)
+        envPath = fs::current_path().parent_path() / ".env";
+    }
+
+    if (!fs::exists(envPath))
+    {
+        throw std::runtime_error(".env file not found.");
+    }
+
+    dotenv::init(envPath.string().c_str());
+
     const char *key = std::getenv("API_KEY");
     if (!key)
         throw std::runtime_error("API_KEY not found in .env");
     apiKey_ = key;
+    http_ = std::make_shared<DefaultHttpClient>();
 }
 
-void TiingoClient::setOfflineMode(bool flag)
-{
-    offlineMode_ = flag;
-}
+TiingoClient::TiingoClient(const std::string &key, std::shared_ptr<HttpClient> client)
+    : apiKey_(key), http_(client ? client : std::make_shared<DefaultHttpClient>()) {}
 
-void TiingoClient::setVerbosity(bool verbose)
-{
-    verbose_ = verbose;
-}
+void TiingoClient::setOfflineMode(bool flag) { offlineMode_ = flag; }
+void TiingoClient::setVerbosity(bool verbose) { verbose_ = verbose; }
 
 PriceSeries TiingoClient::fetchDailyPrices(const std::string &ticker,
                                            const std::string &startDate,
@@ -77,24 +90,25 @@ PriceSeries TiingoClient::fetchDailyPrices(const std::string &ticker,
     if (verbose_)
         std::cout << "[Fetching] " << url << std::endl;
 
-    cpr::Response response;
+    std::string responseBody;
     int retries = 3;
     while (retries-- > 0)
     {
-        response = cpr::Get(cpr::Url{url}, cpr::Timeout{5000});
-        if (response.status_code == 200)
+        try
+        {
+            responseBody = http_->get(url);
             break;
-        if (response.status_code == 429)
+        }
+        catch (const std::runtime_error &e)
+        {
+            if (retries == 0)
+                throw;
             std::this_thread::sleep_for(std::chrono::seconds(2));
+        }
     }
 
-    if (response.status_code != 200)
-    {
-        throw std::runtime_error("Tiingo request failed: HTTP " + std::to_string(response.status_code));
-    }
-
-    cacheResponse(ticker, startDate, endDate, response.text);
-    return parseResponse(ticker, response.text);
+    cacheResponse(ticker, startDate, endDate, responseBody);
+    return parseResponse(ticker, responseBody);
 }
 
 std::map<std::string, PriceSeries> TiingoClient::fetchMultipleDailyPrices(const std::vector<std::string> &tickers,

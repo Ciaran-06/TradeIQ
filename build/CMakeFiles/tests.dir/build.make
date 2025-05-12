@@ -72,10 +72,24 @@ include CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/codegen:
 .PHONY : CMakeFiles/tests.dir/codegen
 
+CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o: /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp
+CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -MF CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o.d -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp
+
+CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp > CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i
+
+CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s
+
 CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o: CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o: /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp
 CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o -MF CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o.d -o CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp
 
 CMakeFiles/tests.dir/tests/test_stats_engine.cpp.i: cmake_force
@@ -86,74 +100,30 @@ CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp -o CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s
 
-CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o: /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
-CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o -MF CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o.d -o CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
-
-CMakeFiles/tests.dir/src/api/tiingo_client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/api/tiingo_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp > CMakeFiles/tests.dir/src/api/tiingo_client.cpp.i
-
-CMakeFiles/tests.dir/src/api/tiingo_client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/api/tiingo_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp -o CMakeFiles/tests.dir/src/api/tiingo_client.cpp.s
-
-CMakeFiles/tests.dir/src/core/stats_engine.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/core/stats_engine.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp
-CMakeFiles/tests.dir/src/core/stats_engine.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/src/core/stats_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/core/stats_engine.cpp.o -MF CMakeFiles/tests.dir/src/core/stats_engine.cpp.o.d -o CMakeFiles/tests.dir/src/core/stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp
-
-CMakeFiles/tests.dir/src/core/stats_engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/core/stats_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp > CMakeFiles/tests.dir/src/core/stats_engine.cpp.i
-
-CMakeFiles/tests.dir/src/core/stats_engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/core/stats_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp -o CMakeFiles/tests.dir/src/core/stats_engine.cpp.s
-
-CMakeFiles/tests.dir/src/core/price_series.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/src/core/price_series.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp
-CMakeFiles/tests.dir/src/core/price_series.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/src/core/price_series.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/src/core/price_series.cpp.o -MF CMakeFiles/tests.dir/src/core/price_series.cpp.o.d -o CMakeFiles/tests.dir/src/core/price_series.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp
-
-CMakeFiles/tests.dir/src/core/price_series.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/src/core/price_series.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp > CMakeFiles/tests.dir/src/core/price_series.cpp.i
-
-CMakeFiles/tests.dir/src/core/price_series.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/src/core/price_series.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp -o CMakeFiles/tests.dir/src/core/price_series.cpp.s
-
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o" \
-"CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o" \
-"CMakeFiles/tests.dir/src/core/stats_engine.cpp.o" \
-"CMakeFiles/tests.dir/src/core/price_series.cpp.o"
+"CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o" \
+"CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-tests: CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o
-tests: CMakeFiles/tests.dir/src/api/tiingo_client.cpp.o
-tests: CMakeFiles/tests.dir/src/core/stats_engine.cpp.o
-tests: CMakeFiles/tests.dir/src/core/price_series.cpp.o
-tests: CMakeFiles/tests.dir/build.make
-tests: /usr/local/lib/libcpr.a
-tests: /usr/local/lib/libCatch2Main.a
-tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
-tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
-tests: /usr/local/lib/libCatch2.a
-tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tests"
+bin/tests: CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o
+bin/tests: CMakeFiles/tests.dir/build.make
+bin/tests: libapi.a
+bin/tests: libcore.a
+bin/tests: /usr/local/lib/libCatch2Main.a
+bin/tests: /usr/local/lib/libcpr.a
+bin/tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
+bin/tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
+bin/tests: /usr/local/lib/libCatch2.a
+bin/tests: CMakeFiles/tests.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/tests.dir/build: tests
+CMakeFiles/tests.dir/build: bin/tests
 .PHONY : CMakeFiles/tests.dir/build
 
 CMakeFiles/tests.dir/clean:

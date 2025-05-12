@@ -1,14 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/main.cpp.o"
-  "CMakeFiles/main.dir/main.cpp.o.d"
-  "CMakeFiles/main.dir/src/api/tiingo_client.cpp.o"
-  "CMakeFiles/main.dir/src/api/tiingo_client.cpp.o.d"
-  "CMakeFiles/main.dir/src/core/price_series.cpp.o"
-  "CMakeFiles/main.dir/src/core/price_series.cpp.o.d"
-  "CMakeFiles/main.dir/src/core/stats_engine.cpp.o"
-  "CMakeFiles/main.dir/src/core/stats_engine.cpp.o.d"
-  "main"
-  "main.pdb"
+  "CMakeFiles/main.dir/src/main.cpp.o"
+  "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "bin/main"
+  "bin/main.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
