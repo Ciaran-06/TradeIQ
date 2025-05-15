@@ -19,4 +19,4 @@ Thank you for your interest in contributing to this project! This is a professio
 
    ```bash
    git clone https://github.com/Ciaran-06/TradeIQ.git
-   cd yourproject
+   cd TradeIQ

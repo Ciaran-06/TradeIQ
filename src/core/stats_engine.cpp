@@ -219,6 +219,13 @@ std::vector<double> StatsEngine::computeRollingVolatility(const std::vector<doub
     return rollingVol;
 }
 
+std::vector<double> StatsEngine::computeRollingStandardDeviation(const std::vector<double> &returns, bool sample)
+{
+    if (returns.size() == 0)
+        throw std::invalid_argument("Vector cannot be empty");
+    std::vector<double> rollingStandardDeviation;
+}
+
 std::vector<std::vector<double>> StatsEngine::computeCorrelationMatrix(const std::vector<PriceSeries> &seriesList)
 {
     size_t n = seriesList.size();
@@ -454,8 +461,14 @@ double StatsEngine::computeTreynorRatio(double expectedReturns, double riskFreeR
 
 double StatsEngine::computeInformationRatio(std::vector<double> &portfolioReturns, std::vector<double> benchmarkReturns)
 {
-    if (portfolioReturns.size() != benchmarkReturns.size()) { throw std::invalid_argument("Portfolio Returns and Benchmark Returns are different lenghts");}
-    if (portfolioReturns.size() == 0 || benchmarkReturns.size()  == 0) {throw std::invalid_argument("Inputs can't be empty!");}
+    if (portfolioReturns.size() != benchmarkReturns.size())
+    {
+        throw std::invalid_argument("Portfolio Returns and Benchmark Returns are different lenghts");
+    }
+    if (portfolioReturns.size() == 0 || benchmarkReturns.size() == 0)
+    {
+        throw std::invalid_argument("Inputs can't be empty!");
+    }
     std::vector<double> activeReturns;
     double meanActiveReturns = 0.0;
     double squaredDiffSum = 0.0;
@@ -472,63 +485,330 @@ double StatsEngine::computeInformationRatio(std::vector<double> &portfolioReturn
 
     meanActiveReturns /= activeReturns.size();
 
-    for (double r : activeReturns) 
+    for (double r : activeReturns)
     {
         squaredDiffSum += (r - meanActiveReturns) * (r - meanActiveReturns);
     }
 
     double stddev = std::sqrt(squaredDiffSum / activeReturns.size());
 
-    if (stddev != 0 ){ return (meanActiveReturns / stddev);}
-    else {return 0;}
+    if (stddev != 0)
+    {
+        return (meanActiveReturns / stddev);
+    }
+    else
+    {
+        return 0;
+    }
 }
 
-double StatsEngine::computeCalmarRatio(double annualReturn, double maxDrawdown) 
+double StatsEngine::computeCalmarRatio(double annualReturn, double maxDrawdown)
 {
-    if ( maxDrawdown == 0.0 ) {
+    if (maxDrawdown == 0.0)
+    {
         return std::numeric_limits<double>::infinity(); // no drawdown = infinite risk-adjusted return
-    } else {
+    }
+    else
+    {
         return annualReturn / maxDrawdown;
     }
 }
 
-double StatsEngine::computeOmegaRatio(const std::vector<double> &returns, double threshold) {
+double StatsEngine::computeOmegaRatio(const std::vector<double> &returns, double threshold)
+{
     double sumAbove = 0.0;
     double sumBelow = 0.0;
 
-    for ( double r : returns)
+    for (double r : returns)
     {
-        if (r > threshold) 
+        if (r > threshold)
         {
             sumAbove += (r - threshold);
-        } else if (r < threshold) {
+        }
+        else if (r < threshold)
+        {
             sumBelow += (threshold - r);
         }
     }
 
-    if (sumBelow == 0) return std::numeric_limits<double>::infinity();
+    if (sumBelow == 0)
+        return std::numeric_limits<double>::infinity();
     return sumAbove / sumBelow;
 }
 
-double StatsEngine::computeTotalReturn(const PriceSeries& series) {
-    const auto& prices = series.getPrices();
+double StatsEngine::computeTotalReturn(const PriceSeries &series)
+{
+    const auto &prices = series.getPrices();
 
     double first = prices.front();
     double last = prices.back();
-    if (prices.empty()) return 0.0;
-    if (first == 0.0) return std::numeric_limits<double>::infinity();
-    return (last/ first) - 1;
-
+    if (prices.empty())
+        return 0.0;
+    if (first == 0.0)
+        return std::numeric_limits<double>::infinity();
+    return (last / first) - 1;
 }
 
-double StatsEngine::computeAnnualizedReturn(double totalReturn, int numPeriods, int periodsPerYear) {
-    if ( numPeriods <= 0 || periodsPerYear <= 0)  throw std::invalid_argument("Inputs are not valid");
+double StatsEngine::computeAnnualizedReturn(double totalReturn, int numPeriods, int periodsPerYear)
+{
+    if (numPeriods <= 0 || periodsPerYear <= 0)
+        throw std::invalid_argument("Inputs are not valid");
 
     double growthFactor = 1 + totalReturn;
 
     return pow(growthFactor, static_cast<double>(periodsPerYear) / numPeriods) - 1.0;
 }
 
-double StatsEngine::computeAnnualizedVolatility(const std::vector<double>& returns, int periodsPerYear) {
+double StatsEngine::computeAnnualizedVolatility(const std::vector<double> &returns, int periodsPerYear)
+{
+    if (returns.empty())
+        throw std::invalid_argument("Returns vector cannot be empty.");
+    if (periodsPerYear <= 0)
+        throw std::invalid_argument("Periods per year must be positive.");
 
+    double stddev = MathUtils::standardDeviation(returns, true);
+    return stddev * std::sqrt(static_cast<double>(periodsPerYear));
+}
+
+double StatsEngine::computeAverageDrawdown(const std::vector<double> &cumulativeReturns)
+{
+    if (cumulativeReturns.empty())
+        return 0.0;
+
+    double peak = cumulativeReturns[0];
+    double trough = cumulativeReturns[0];
+    bool inDrawdown = false;
+    std::vector<double> drawdowns;
+
+    for (size_t i = 1; i < cumulativeReturns.size(); ++i)
+    {
+        double value = cumulativeReturns[i];
+
+        if (value >= peak)
+        {
+            if (inDrawdown && trough < peak)
+            {
+                double drawdown = (peak - trough) / peak;
+                drawdowns.push_back(drawdown);
+            }
+            peak = value;
+            trough = value;
+            inDrawdown = false;
+        }
+        else
+        {
+            inDrawdown = true;
+            trough = std::min(trough, value);
+        }
+    }
+
+    // Edge case: still in drawdown at end
+    if (inDrawdown && trough < peak)
+    {
+        double drawdown = (peak - trough) / peak;
+        drawdowns.push_back(drawdown);
+    }
+
+    if (drawdowns.empty())
+        return 0.0;
+
+    double sum = std::accumulate(drawdowns.begin(), drawdowns.end(), 0.0);
+    return sum / drawdowns.size();
+}
+
+double StatsEngine::computeSterlingRatio(double averageReturn, double riskFreeRate, double averageDrawdown)
+{
+    if (averageDrawdown == 0)
+        throw std::invalid_argument("Average drawdown can't be 0");
+
+    return (averageReturn - riskFreeRate) / averageDrawdown;
+}
+
+double StatsEngine::computeVolatilitySkew(const std::vector<double> &returns)
+{
+    std::vector<double> positiveReturns;
+    std::vector<double> negativeReturns;
+
+    for (double r : returns)
+    {
+        if (r >= 0.0)
+        {
+            positiveReturns.push_back(r);
+        }
+        else
+        {
+            negativeReturns.push_back(r);
+        }
+    }
+
+    if (positiveReturns.empty())
+        throw std::invalid_argument("No positive returns — cannot compute positive standard deviation.");
+
+    if (negativeReturns.empty())
+        throw std::invalid_argument("No negative returns — cannot compute volatility skew.");
+
+    double stddevPositive = MathUtils::standardDeviation(positiveReturns, true);
+    double stddevNegative = MathUtils::standardDeviation(negativeReturns, true);
+
+    if (stddevPositive == 0.0)
+        throw std::invalid_argument("Standard deviation of positive returns is zero.");
+
+    return stddevNegative / stddevPositive;
+}
+
+double StatsEngine::computeUpsideCaptureRatio(const std::vector<double> &portfolioReturns,
+                                              const std::vector<double> &benchmarkReturns)
+{
+    if (portfolioReturns.size() != benchmarkReturns.size())
+    {
+        throw std::invalid_argument("Mismatched input sizes");
+    }
+
+    std::vector<double> portUpside;
+    std::vector<double> benchUpside;
+
+    for (size_t i = 0; i < benchmarkReturns.size(); ++i)
+    {
+        if (benchmarkReturns[i] > 0)
+        {
+            portUpside.push_back(portfolioReturns[i]);
+            benchUpside.push_back(benchmarkReturns[i]);
+        }
+    }
+
+    if (benchUpside.empty())
+        return 0.0;
+
+    double avgPort = MathUtils::mean(portUpside);
+    double avgBench = MathUtils::mean(benchUpside);
+
+    return avgBench == 0.0 ? 0.0 : avgPort / avgBench;
+}
+
+double StatsEngine::computeDownsideCaptureRatio(const std::vector<double> &portfolioReturns,
+                                                const std::vector<double> &benchmarkReturns)
+{
+    if (portfolioReturns.size() != benchmarkReturns.size())
+    {
+        throw std::invalid_argument("Mismatched input sizes");
+    }
+
+    std::vector<double> portDownside;
+    std::vector<double> benchDownside;
+
+    for (size_t i = 0; i < benchmarkReturns.size(); ++i)
+    {
+        if (benchmarkReturns[i] < 0)
+        {
+            portDownside.push_back(portfolioReturns[i]);
+            benchDownside.push_back(benchmarkReturns[i]);
+        }
+    }
+
+    if (benchDownside.empty())
+        return 0.0;
+
+    double avgPort = MathUtils::mean(portDownside);
+    double avgBench = MathUtils::mean(benchDownside);
+
+    return avgBench == 0.0 ? 0.0 : avgPort / avgBench;
+}
+
+double StatsEngine::computeSkewness(const std::vector<double> &returns)
+{
+    if (std::adjacent_find(returns.begin(), returns.end(), std::not_equal_to<>()) == returns.end())
+    {
+        throw std::invalid_argument("Elements in Vector must be unique, Skewness of Non-Unique Vector is undefined(division by 0)");
+    }
+    if (returns.size() < 3)
+        throw std::invalid_argument("Need at least 3 data points for skewness");
+    double mean = MathUtils::mean(returns);
+    double stddev = MathUtils::standardDeviation(returns);
+    double sum = 0.0;
+    for (double r : returns)
+        sum += std::pow(r - mean, 3);
+    return (sum / returns.size()) / std::pow(stddev, 3);
+}
+
+double StatsEngine::computeKurtosis(const std::vector<double> &returns)
+{
+    if (returns.size() < 4)
+        throw std::invalid_argument("Need at least 4 data points for kurtosis");
+    double mean = MathUtils::mean(returns);
+    double stddev = MathUtils::standardDeviation(returns);
+    double sum = 0.0;
+    for (double r : returns)
+        sum += std::pow(r - mean, 4);
+    return (sum / returns.size()) / std::pow(stddev, 4) - 3.0;
+}
+
+double StatsEngine::computeGainLossRatio(const std::vector<double> &returns)
+{
+    if (returns.size() == 0)
+        throw std::invalid_argument("Vector cannot be empty!");
+    double gainSum = 0.0, lossSum = 0.0;
+    for (double r : returns)
+    {
+        if (r > 0)
+            gainSum += r;
+        else
+            lossSum -= r;
+    }
+    if (lossSum == 0.0)
+        return std::numeric_limits<double>::infinity();
+    return gainSum / lossSum;
+}
+
+double StatsEngine::computeHitRatio(const std::vector<double> &returns)
+{
+    if (returns.empty())
+        throw std::invalid_argument("Vector cannot be empty!");
+    size_t hits = 0;
+    for (double r : returns)
+        if (r > 0)
+            ++hits;
+    return static_cast<double>(hits) / returns.size();
+}
+
+int StatsEngine::computeMaxRecoveryTime(const std::vector<double> &cumulativeReturns)
+{
+    if (cumulativeReturns.empty()) return 0;
+
+    double peak = cumulativeReturns[0];
+    int peakIndex = 0;
+    int maxRecoveryTime = 0;
+    bool inDrawdown = false;
+
+    for (size_t i = 1; i < cumulativeReturns.size(); ++i)
+    {
+        double value = cumulativeReturns[i];
+
+        if (value > peak)
+        {
+            if (inDrawdown)
+            {
+                int recoveryTime = static_cast<int>(i - peakIndex);
+                maxRecoveryTime = std::max(maxRecoveryTime, recoveryTime);
+                inDrawdown = false;
+            }
+            peak = value;
+            peakIndex = static_cast<int>(i);
+        }
+        else if (value < peak)
+        {
+            if (!inDrawdown)
+            {
+                inDrawdown = true;
+            }
+        }
+    }
+
+    // If still in drawdown at the end, count recovery time up to the last point
+    if (inDrawdown)
+    {
+        int recoveryTime = static_cast<int>(cumulativeReturns.size()) - peakIndex;
+        maxRecoveryTime = std::max(maxRecoveryTime, recoveryTime);
+    }
+
+    return maxRecoveryTime;
 }

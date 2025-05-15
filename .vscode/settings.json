@@ -44,9 +44,11 @@
         "algorithm": "cpp"
     },
     "cSpell.words": [
+        "avrg",
         "Calmar",
         "CAPM",
         "lenghts",
+        "pybind",
         "sttdev"
     ]
 }

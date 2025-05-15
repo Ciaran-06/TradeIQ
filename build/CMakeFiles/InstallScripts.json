@@ -1,7 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/ciarangaffney/TradeIQ/build/cmake_install.cmake"
+		"/Users/ciarangaffney/TradeIQ/build/cmake_install.cmake",
+		"/Users/ciarangaffney/TradeIQ/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/ciarangaffney/TradeIQ/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/ciarangaffney/TradeIQ/build/_deps/googletest-build/googletest/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

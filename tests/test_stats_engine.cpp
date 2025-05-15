@@ -339,17 +339,19 @@ TEST_CASE("Calmar Ratio is computed correctly", "[calmar]")
     }
 }
 
-
-TEST_CASE("Omega Ratio is computed correctly", "[omega]") {
-    SECTION("Balanced case") {
+TEST_CASE("Omega Ratio is computed correctly", "[omega]")
+{
+    SECTION("Balanced case")
+    {
         std::vector<double> returns = {0.02, 0.04, -0.01, -0.02, 0.03};
         double threshold = 0.0;
 
         double result = StatsEngine::computeOmegaRatio(returns, threshold);
-        REQUIRE(result == Catch::Approx((0.02+0.04+0.03) / (0.01+0.02)).epsilon(0.001));  // 0.09 / 0.03 = 3.0
+        REQUIRE(result == Catch::Approx((0.02 + 0.04 + 0.03) / (0.01 + 0.02)).epsilon(0.001)); // 0.09 / 0.03 = 3.0
     }
 
-    SECTION("All returns above threshold") {
+    SECTION("All returns above threshold")
+    {
         std::vector<double> returns = {0.03, 0.04, 0.05};
         double threshold = 0.01;
 
@@ -357,7 +359,8 @@ TEST_CASE("Omega Ratio is computed correctly", "[omega]") {
         REQUIRE(std::isinf(result));
     }
 
-    SECTION("All returns below threshold") {
+    SECTION("All returns below threshold")
+    {
         std::vector<double> returns = {-0.02, -0.01, -0.03};
         double threshold = 0.0;
 
@@ -365,7 +368,8 @@ TEST_CASE("Omega Ratio is computed correctly", "[omega]") {
         REQUIRE(result == Catch::Approx(0.0).margin(0.0001));
     }
 
-    SECTION("Mixed returns, threshold at 0.01") {
+    SECTION("Mixed returns, threshold at 0.01")
+    {
         std::vector<double> returns = {0.015, 0.005, -0.005, 0.025};
         double threshold = 0.01;
 
@@ -376,12 +380,12 @@ TEST_CASE("Omega Ratio is computed correctly", "[omega]") {
     }
 }
 
-TEST_CASE("Computing Daily Return", "[daily_return]") {
-
+TEST_CASE("Computing Daily Return", "[daily_return]")
+{
 }
 
-
-TEST_CASE("Daily returns: increasing prices", "[daily_returns]") {
+TEST_CASE("Daily returns: increasing prices", "[daily_returns]")
+{
     PriceSeries ps("UP", {"2023-01-01", "2023-01-02", "2023-01-03"}, {100.0, 110.0, 121.0});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
@@ -390,7 +394,8 @@ TEST_CASE("Daily returns: increasing prices", "[daily_returns]") {
     REQUIRE(returns[1] == Catch::Approx(0.10));
 }
 
-TEST_CASE("Daily returns: decreasing prices", "[daily_returns]") {
+TEST_CASE("Daily returns: decreasing prices", "[daily_returns]")
+{
     PriceSeries ps("DOWN", {"2023-01-01", "2023-01-02", "2023-01-03"}, {100.0, 90.0, 81.0});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
@@ -399,7 +404,8 @@ TEST_CASE("Daily returns: decreasing prices", "[daily_returns]") {
     REQUIRE(returns[1] == Catch::Approx(-0.10));
 }
 
-TEST_CASE("Daily returns: flat prices", "[daily_returns]") {
+TEST_CASE("Daily returns: flat prices", "[daily_returns]")
+{
     PriceSeries ps("FLAT", {"2023-01-01", "2023-01-02", "2023-01-03"}, {100.0, 100.0, 100.0});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
@@ -408,21 +414,24 @@ TEST_CASE("Daily returns: flat prices", "[daily_returns]") {
     REQUIRE(returns[1] == Catch::Approx(0.0));
 }
 
-TEST_CASE("Daily returns: single price only", "[daily_returns]") {
+TEST_CASE("Daily returns: single price only", "[daily_returns]")
+{
     PriceSeries ps("SINGLE", {"2023-01-01"}, {100.0});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
     REQUIRE(returns.empty());
 }
 
-TEST_CASE("Daily returns: empty series", "[daily_returns]") {
+TEST_CASE("Daily returns: empty series", "[daily_returns]")
+{
     PriceSeries ps("EMPTY", {}, {});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
     REQUIRE(returns.empty());
 }
 
-TEST_CASE("Daily returns: large price jump", "[daily_returns]") {
+TEST_CASE("Daily returns: large price jump", "[daily_returns]")
+{
     PriceSeries ps("JUMP", {"2023-01-01", "2023-01-02"}, {1.0, 1000.0});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
@@ -430,7 +439,8 @@ TEST_CASE("Daily returns: large price jump", "[daily_returns]") {
     REQUIRE(returns[0] == Catch::Approx(999.0));
 }
 
-TEST_CASE("Daily returns: price drops to near zero", "[daily_returns]") {
+TEST_CASE("Daily returns: price drops to near zero", "[daily_returns]")
+{
     PriceSeries ps("DROP", {"2023-01-01", "2023-01-02"}, {1000.0, 0.01});
     auto returns = StatsEngine::computeDailyReturns(ps);
 
@@ -438,8 +448,8 @@ TEST_CASE("Daily returns: price drops to near zero", "[daily_returns]") {
     REQUIRE(returns[0] == Catch::Approx(-0.99999).margin(1e-5));
 }
 
-
-TEST_CASE("Annualized Return - Normal case", "[annual_return]") {
+TEST_CASE("Annualized Return - Normal case", "[annual_return]")
+{
     double totalReturn = 0.10; // 10%
     int numPeriods = 12;       // e.g., 12 months
     int periodsPerYear = 12;
@@ -450,9 +460,10 @@ TEST_CASE("Annualized Return - Normal case", "[annual_return]") {
     REQUIRE(result == Catch::Approx(0.10).margin(0.0001));
 }
 
-TEST_CASE("Annualized Return - Compounded over multiple years", "[annual_return]") {
+TEST_CASE("Annualized Return - Compounded over multiple years", "[annual_return]")
+{
     double totalReturn = 0.21;
-    int numPeriods = 24;       // 2 years monthly
+    int numPeriods = 24; // 2 years monthly
     int periodsPerYear = 12;
 
     double result = StatsEngine::computeAnnualizedReturn(totalReturn, numPeriods, periodsPerYear);
@@ -461,9 +472,10 @@ TEST_CASE("Annualized Return - Compounded over multiple years", "[annual_return]
     REQUIRE(result == Catch::Approx(0.10).margin(0.0001));
 }
 
-TEST_CASE("Annualized Return - Daily returns", "[annual_return]") {
+TEST_CASE("Annualized Return - Daily returns", "[annual_return]")
+{
     double totalReturn = 0.05;
-    int numPeriods = 252;       // trading days
+    int numPeriods = 252; // trading days
     int periodsPerYear = 252;
 
     double result = StatsEngine::computeAnnualizedReturn(totalReturn, numPeriods, periodsPerYear);
@@ -471,18 +483,294 @@ TEST_CASE("Annualized Return - Daily returns", "[annual_return]") {
     REQUIRE(result == Catch::Approx(0.05).margin(0.0001));
 }
 
-TEST_CASE("Annualized Return - Zero total return", "[annual_return]") {
+TEST_CASE("Annualized Return - Zero total return", "[annual_return]")
+{
     double result = StatsEngine::computeAnnualizedReturn(0.0, 12, 12);
     REQUIRE(result == Catch::Approx(0.0).margin(0.0001));
 }
 
-TEST_CASE("Annualized Return - Negative return", "[annual_return]") {
+TEST_CASE("Annualized Return - Negative return", "[annual_return]")
+{
     double result = StatsEngine::computeAnnualizedReturn(-0.10, 12, 12);
     REQUIRE(result == Catch::Approx(-0.10).margin(0.0001));
 }
 
-TEST_CASE("Annualized Return - Invalid inputs throw", "[annual_return]") {
+TEST_CASE("Annualized Return - Invalid inputs throw", "[annual_return]")
+{
     REQUIRE_THROWS_AS(StatsEngine::computeAnnualizedReturn(0.1, 0, 12), std::invalid_argument);
     REQUIRE_THROWS_AS(StatsEngine::computeAnnualizedReturn(0.1, 12, 0), std::invalid_argument);
     REQUIRE_THROWS_AS(StatsEngine::computeAnnualizedReturn(0.1, -1, 12), std::invalid_argument);
+}
+
+TEST_CASE("Average Drawdown - no drawdown", "[drawdown][avg]")
+{
+    std::vector<double> returns = {1.0, 1.1, 1.2, 1.3, 1.4};
+    double result = StatsEngine::computeAverageDrawdown(returns);
+    REQUIRE(result == Catch::Approx(0.0).margin(1e-6));
+}
+
+TEST_CASE("Average Drawdown - single dip", "[drawdown][avg]")
+{
+    std::vector<double> returns = {1.0, 1.2, 1.1, 1.3, 1.4};
+    double result = StatsEngine::computeAverageDrawdown(returns);
+    REQUIRE(result == Catch::Approx(0.0833).margin(0.001)); // ~ (1.2-1.1)/1.2
+}
+
+TEST_CASE("Average Drawdown - multiple dips", "[drawdown][avg]")
+{
+    std::vector<double> returns = {1.0, 1.2, 1.0, 1.3, 1.1, 1.4};
+    double result = StatsEngine::computeAverageDrawdown(returns);
+    REQUIRE(result == Catch::Approx((0.1667 + 0.1538) / 2.0).margin(0.001));
+}
+
+TEST_CASE("Average Drawdown - repeated flat", "[drawdown][avg]")
+{
+    std::vector<double> returns = {1.0, 1.0, 1.0, 1.1, 1.1};
+    double result = StatsEngine::computeAverageDrawdown(returns);
+    REQUIRE(result == Catch::Approx(0.0).margin(1e-6));
+}
+
+TEST_CASE("Average Drawdown - deep early drop", "[drawdown][avg]")
+{
+    std::vector<double> returns = {1.0, 0.75, 1.0, 0.9375, 1.0};
+    double result = StatsEngine::computeAverageDrawdown(returns);
+    REQUIRE(result == Catch::Approx((0.25 + 0.0625) / 2.0).margin(0.01));
+}
+
+TEST_CASE("Annualized Volatility is computed correctly", "[annualized_volatility]")
+{
+    std::vector<double> dailyReturns = {0.01, -0.02, 0.015, -0.005, 0.01};
+    int periodsPerYear = 252; // typical for daily returns
+
+    double stddev = MathUtils::standardDeviation(dailyReturns, true);
+    double expectedAnnualizedVol = stddev * std::sqrt(periodsPerYear);
+
+    double result = StatsEngine::computeAnnualizedVolatility(dailyReturns, periodsPerYear);
+
+    REQUIRE(result == Catch::Approx(expectedAnnualizedVol).epsilon(1e-6));
+}
+
+TEST_CASE("Annualized Volatility throws on empty input", "[annualized_volatility][error]")
+{
+    std::vector<double> empty;
+    REQUIRE_THROWS_AS(StatsEngine::computeAnnualizedVolatility(empty, 252), std::invalid_argument);
+}
+
+TEST_CASE("Annualized Volatility throws on invalid periods per year", "[annualized_volatility][error]")
+{
+    std::vector<double> sample = {0.01, -0.01};
+    REQUIRE_THROWS_AS(StatsEngine::computeAnnualizedVolatility(sample, 0), std::invalid_argument);
+}
+
+TEST_CASE("Volatility Skew - typical mix", "[volatility_skew]")
+{
+    std::vector<double> returns = {-0.02, -0.01, 0.01, 0.02, 0.03};
+    double result = StatsEngine::computeVolatilitySkew(returns);
+    REQUIRE(result > 0.0); // not checking exact value here
+}
+
+TEST_CASE("Volatility Skew - only positive", "[volatility_skew]")
+{
+    std::vector<double> returns = {0.01, 0.02, 0.03};
+    REQUIRE_THROWS_AS(StatsEngine::computeVolatilitySkew(returns), std::invalid_argument);
+}
+
+TEST_CASE("Volatility Skew - only negative", "[volatility_skew]")
+{
+    std::vector<double> returns = {-0.01, -0.02, -0.03};
+    REQUIRE_THROWS_AS(StatsEngine::computeVolatilitySkew(returns), std::invalid_argument);
+}
+
+TEST_CASE("Volatility Skew - zero std deviation of positive returns", "[volatility_skew]")
+{
+    std::vector<double> returns = {-0.01, -0.02, 0.02, 0.02};
+    REQUIRE_THROWS_AS(StatsEngine::computeVolatilitySkew(returns), std::invalid_argument);
+}
+
+TEST_CASE("Upside Capture Ratio - normal case", "[capture][upside]")
+{
+    std::vector<double> portfolio = {0.1, 0.2, 0.15};
+    std::vector<double> benchmark = {0.1, 0.2, 0.1};
+
+    double result = StatsEngine::computeUpsideCaptureRatio(portfolio, benchmark);
+    REQUIRE(result == Catch::Approx(1.125).margin(0.001));
+}
+
+TEST_CASE("Downside Capture Ratio - normal case", "[capture][downside]")
+{
+    std::vector<double> portfolio = {-0.1, -0.2, -0.15};
+    std::vector<double> benchmark = {-0.1, -0.2, -0.1};
+
+    double result = StatsEngine::computeDownsideCaptureRatio(portfolio, benchmark);
+    REQUIRE(result == Catch::Approx(1.125).margin(0.001));
+}
+
+TEST_CASE("Upside Capture Ratio - mixed signs", "[capture][upside]")
+{
+    std::vector<double> portfolio = {0.1, -0.1, 0.15};
+    std::vector<double> benchmark = {0.1, -0.2, 0.1};
+
+    double result = StatsEngine::computeUpsideCaptureRatio(portfolio, benchmark);
+    REQUIRE(result == Catch::Approx(1.25).margin(0.001));
+}
+
+TEST_CASE("Downside Capture Ratio - mixed signs", "[capture][downside]")
+{
+    std::vector<double> portfolio = {0.1, -0.1, 0.15};
+    std::vector<double> benchmark = {0.1, -0.2, 0.1};
+
+    double result = StatsEngine::computeDownsideCaptureRatio(portfolio, benchmark);
+    REQUIRE(result == Catch::Approx(0.5).margin(0.001));
+}
+
+TEST_CASE("Upside Capture Ratio - no positive benchmark returns", "[capture][upside]")
+{
+    std::vector<double> portfolio = {0.1, 0.2};
+    std::vector<double> benchmark = {-0.1, -0.2};
+
+    double result = StatsEngine::computeUpsideCaptureRatio(portfolio, benchmark);
+    REQUIRE(result == Catch::Approx(0.0).margin(1e-6));
+}
+
+TEST_CASE("Downside Capture Ratio - no negative benchmark returns", "[capture][downside]")
+{
+    std::vector<double> portfolio = {0.1, 0.2};
+    std::vector<double> benchmark = {0.1, 0.2};
+
+    double result = StatsEngine::computeDownsideCaptureRatio(portfolio, benchmark);
+    REQUIRE(result == Catch::Approx(0.0).margin(1e-6));
+}
+
+TEST_CASE("Capture Ratios - empty inputs", "[capture]")
+{
+    std::vector<double> portfolio;
+    std::vector<double> benchmark;
+
+    double upside = StatsEngine::computeUpsideCaptureRatio(portfolio, benchmark);
+    double downside = StatsEngine::computeDownsideCaptureRatio(portfolio, benchmark);
+
+    REQUIRE(upside == Catch::Approx(0.0).margin(1e-6));
+    REQUIRE(downside == Catch::Approx(0.0).margin(1e-6));
+}
+
+// Gain/Loss Ratio Tests
+TEST_CASE("Gain/Loss Ratio - normal case", "[gain_loss]")
+{
+    std::vector<double> returns = {0.04, -0.02, 0.03, -0.01, 0.05};
+    double result = StatsEngine::computeGainLossRatio(returns);
+    REQUIRE(result == Catch::Approx((0.04 + 0.03 + 0.05) / (0.02 + 0.01)).epsilon(0.001));
+}
+
+TEST_CASE("Gain/Loss Ratio - all positive", "[gain_loss]")
+{
+    std::vector<double> returns = {0.01, 0.02, 0.03};
+    double result = StatsEngine::computeGainLossRatio(returns);
+    REQUIRE(std::isinf(result));
+}
+
+TEST_CASE("Gain/Loss Ratio - all negative", "[gain_loss]")
+{
+    std::vector<double> returns = {-0.01, -0.02};
+    double result = StatsEngine::computeGainLossRatio(returns);
+    REQUIRE(result == Catch::Approx(0.0).margin(1e-8));
+}
+
+TEST_CASE("Gain/Loss Ratio - empty vector", "[gain_loss]")
+{
+    std::vector<double> returns = {};
+    REQUIRE_THROWS_AS(StatsEngine::computeGainLossRatio(returns), std::invalid_argument);
+}
+
+// Hit Ratio Tests
+TEST_CASE("Hit Ratio - typical", "[hit_ratio]")
+{
+    std::vector<double> returns = {0.01, -0.02, 0.03, -0.01};
+    double result = StatsEngine::computeHitRatio(returns);
+    REQUIRE(result == Catch::Approx(0.5));
+}
+
+TEST_CASE("Hit Ratio - all positive", "[hit_ratio]")
+{
+    std::vector<double> returns = {0.01, 0.02, 0.03};
+    double result = StatsEngine::computeHitRatio(returns);
+    REQUIRE(result == 1.0);
+}
+
+TEST_CASE("Hit Ratio - all negative", "[hit_ratio]")
+{
+    std::vector<double> returns = {-0.01, -0.02, -0.03};
+    double result = StatsEngine::computeHitRatio(returns);
+    REQUIRE(result == 0.0);
+}
+
+TEST_CASE("Hit Ratio - empty", "[hit_ratio]")
+{
+    std::vector<double> returns = {};
+    REQUIRE_THROWS_AS(StatsEngine::computeHitRatio(returns), std::invalid_argument);
+}
+
+// Skewness Tests
+TEST_CASE("Skewness - normal shape", "[skewness]")
+{
+    std::vector<double> returns = {-0.01, 0.0, 0.01};
+    double result = StatsEngine::computeSkewness(returns);
+    REQUIRE(result == Catch::Approx(0.0).margin(0.001));
+}
+
+    TEST_CASE("Skewness - all identical", "[skewness]")
+{
+    std::vector<double> returns = {0.05, 0.05, 0.05};
+    REQUIRE_THROWS_AS(StatsEngine::computeSkewness(returns), std::invalid_argument);
+}
+
+// Kurtosis Tests
+TEST_CASE("Kurtosis - normal data", "[kurtosis]")
+{
+    std::vector<double> returns = {-0.02, 0.01, 0.03, -0.01, 0.02};
+    double result = StatsEngine::computeKurtosis(returns);
+    REQUIRE(result >= -3.0); // For excess kurtosis, normal is 0
+}
+
+TEST_CASE("Kurtosis - all same", "[kurtosis]")
+{
+    std::vector<double> returns = {0.03, 0.03, 0.03,0.03};
+    double result = StatsEngine::computeKurtosis(returns);
+    REQUIRE(std::isnan(result));
+}
+
+
+TEST_CASE("Max Recovery Time - immediate recovery", "[max_recovery_time]") {
+    std::vector<double> returns = {100, 95, 100, 105};
+    int result = StatsEngine::computeMaxRecoveryTime(returns);
+    REQUIRE(result == 1);  // 95 → 100 takes 1 period
+}
+
+TEST_CASE("Max Recovery Time - longer recovery", "[max_recovery_time]") {
+    std::vector<double> returns = {100, 95, 90, 92, 97, 100};
+    int result = StatsEngine::computeMaxRecoveryTime(returns);
+    REQUIRE(result == 4);  // From 100 down to 90, then 4 periods to recover
+}
+
+TEST_CASE("Max Recovery Time - multiple drawdowns", "[max_recovery_time]") {
+    std::vector<double> returns = {100, 98, 100, 95, 97, 100, 90, 95, 100};
+    int result = StatsEngine::computeMaxRecoveryTime(returns);
+    REQUIRE(result == 3);  // 90 → 100 is longest
+}
+
+TEST_CASE("Max Recovery Time - no drawdown", "[max_recovery_time]") {
+    std::vector<double> returns = {100, 105, 110, 120};
+    int result = StatsEngine::computeMaxRecoveryTime(returns);
+    REQUIRE(result == 0);  // no drawdown at all
+}
+
+TEST_CASE("Max Recovery Time - ends in drawdown", "[max_recovery_time]") {
+    std::vector<double> returns = {100, 90, 95, 97};  // never gets back to 100
+    int result = StatsEngine::computeMaxRecoveryTime(returns);
+    REQUIRE(result == 3);  // still in drawdown at end
+}
+
+TEST_CASE("Max Recovery Time - empty vector", "[max_recovery_time]") {
+    std::vector<double> returns = {};
+    int result = StatsEngine::computeMaxRecoveryTime(returns);
+    REQUIRE(result == 0);
 }
