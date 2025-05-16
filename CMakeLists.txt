@@ -104,3 +104,48 @@ set_target_properties(tests PROPERTIES
 )
 
 add_test(NAME AllTests COMMAND tests)
+
+# ========================================================
+# Installation
+# ========================================================
+install(TARGETS
+  main_exec
+  EXPORT TradeIQTargets
+  RUNTIME DESTINATION bin
+)
+
+install(
+  DIRECTORY src/
+  DESTINATION include
+  FILES_MATCHING PATTERN "*.h" PATTERN "*.hpp"
+)
+
+install(EXPORT TradeIQTargets
+    FILE TradeIQConfig.cmake
+    NAMESPACE TradeIQ::
+    DESTINATION lib/cmake/TradeIQ
+)
+
+# ========================================================
+# Packing
+# ========================================================
+include(CPack)
+
+set(CPACK_PACKAGE_NAME "TradeIQ")
+set(CPACK_PACKAGE_VENDOR "Ciaran Gaffney")
+set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Quant Research & Trading Toolkit")
+set(CPACK_PACKAGE_VERSION "0.1.0")
+set(CPACK_PACKAGE_CONTACT "you@example.com")
+
+# Set output format (choose one or more)
+set(CPACK_GENERATOR "TGZ;ZIP")  # You can also add DEB, RPM, etc.
+
+# Optional: where to install
+set(CPACK_PACKAGING_INSTALL_PREFIX "/opt/tradeiq")
+
+# Include license
+set(CPACK_RESOURCE_FILE_LICENSE "${CMAKE_SOURCE_DIR}/LICENSE")
+
+# Finalize CPack
+include(CPack)
+

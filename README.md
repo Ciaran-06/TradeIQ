@@ -174,3 +174,4 @@ Pull requests welcome for:
 
 ### 👨‍💻 Built for learning. Extend for production.  
 *Quant tools should be accessible, modular, and reproducible.*
+
