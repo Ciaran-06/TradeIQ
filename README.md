@@ -1,28 +1,34 @@
-#TradeIQ — Quant Research & Trading Dashboard
 
-> **Quant dashboard for research, analytics, and strategy development**
-> Built in C++17 with Python & React interfaces, powered by Tiingo data.
+# TradeIQ — Quant Research & Trading Dashboard
+
+![CI](https://github.com/Ciaran-06/TradeIQ/actions/workflows/ci.yml/badge.svg)
+
+> 🧠 **Quantitative research platform** for backtesting, analytics, and strategy simulation.  
+> 🛠 Built in **modern C++17** with planned Python and React frontends. Powered by **Tiingo API** data.
+
+---
 
 ## 🌟 Features
 
-* **Data ingestion:** fetch & cache historical stock data via Tiingo API
-* **Statistics engine:** compute daily returns, covariance matrix, portfolio variance
-* **Optimisation:** mean-variance portfolio optimiser (Markowitz)
-* **Strategy builder:** simulate strategies with custom weight inputs
-* **Web dashboard:** real-time results, visualisation, backtest interface
-* **Python interface:** plug into Jupyter or Streamlit
+- 📈 **Data ingestion**: Fetch and cache historical data via Tiingo (JSON over HTTPS)
+- 📊 **Statistics engine**: Portfolio analytics (returns, volatility, Sharpe, Sortino, drawdowns, etc.)
+- 🧮 **Optimisation**: Markowitz mean-variance optimiser
+- 🧪 **Strategy simulation**: Plug-and-play engine for weight-based strategies
+- 🖥 **CLI interface**: Run analysis from terminal
+- 🧬 **Python bindings**: (WIP) Integration via `pybind11` for notebooks/Streamlit
+- 📊 **Web dashboard**: (WIP) React frontend for interactive results + charts
 
 ---
 
 ## 🔍 Use Case
 
-Build and test portfolio strategies with:
+Use TradeIQ to:
 
-* Historical price data
-* Risk-adjusted return metrics
-* Covariance heatmaps
-* Efficient frontier plots
-* Trading logic simulator
+- Fetch and manage price series
+- Backtest strategies with daily/rolling metrics
+- Generate efficient frontiers and compare allocations
+- Visualise drawdowns, correlations, and returns
+- Export metrics for Python or reporting tools
 
 ---
 
@@ -31,103 +37,140 @@ Build and test portfolio strategies with:
 ```
 TradeIQ/
 ├── src/
-│   ├── api/tiingo.h/.cpp      # data fetching (Tiingo, switchable)
-│   ├── core/                        # stats + optimisation engine
-│   ├── utils/                       # helper functions
-├── tests/                           # Catch2 test suite
-├── web/                             # React dashboard (WIP)
-├── python/                          # pybind11 interface
-├── .env                             # store API_KEY
-├── main.cpp                         # CLI entry point
-├── CMakeLists.txt                   # build config
+│   ├── api/             # Tiingo HTTP client
+│   ├── core/            # StatsEngine, strategy logic
+│   ├── stats/           # Analytics: drawdowns, ratios, volatility
+│   ├── utils/           # Helpers & math
+│   └── cli/             # Terminal output (matrix printer, etc.)
+├── tests/               # GTest suite
+├── python/              # Pybind11 interface (planned)
+├── web/                 # React dashboard (planned)
+├── .env                 # API key storage (not committed)
+├── main.cpp             # CLI entry point
+├── CMakeLists.txt       # CMake build config
 ```
 
 ---
 
 ## 🚀 Getting Started
 
-1. Clone the repo:
+1. **Clone the repo**
 
 ```bash
 git clone https://github.com/Ciaran-06/TradeIQ.git
 cd TradeIQ
 ```
 
-2. Add your `.env` file:
+2. **Add API key**
 
 ```bash
-echo "API_KEY=your_tiingo_key" > .env
+echo "TIINGO_API_KEY=your_key_here" > .env
 ```
 
-3. Build project:
+3. **Build the project**
 
 ```bash
 mkdir build && cd build
-cmake .. && make -j
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j
 ```
 
-4. Run main:
+4. **Run**
 
 ```bash
-./main
+./main_exec
+```
+
+---
+
+## ✅ Run Tests
+
+```bash
+cd build
+ctest --output-on-failure
+```
+
+Or run the test binary directly:
+
+```bash
+./tests
 ```
 
 ---
 
 ## 🧪 Dependencies
 
-* [Tiingo API](https://api.tiingo.com/)
-* [cpr](https://github.com/libcpr/cpr) - HTTP
-* [nlohmann/json](https://github.com/nlohmann/json) - JSON
-* [Catch2](https://github.com/catchorg/Catch2) - testing
-* [dotenv-cpp](https://github.com/laserpants/dotenv-cpp) - env vars
+| Library            | Purpose             |
+|--------------------|---------------------|
+| [`cpr`](https://github.com/libcpr/cpr)           | HTTP client (for API calls)         |
+| [`nlohmann/json`](https://github.com/nlohmann/json) | JSON parsing                        |
+| [`dotenv-cpp`](https://github.com/laserpants/dotenv-cpp) | Load API keys from `.env`           |
+| [`Google Test`](https://github.com/google/googletest)     | Unit testing framework              |
+| [`CMake`](https://cmake.org/)                    | Build system                        |
 
 ---
 
 ## 🔧 Build Options
 
 ```bash
-cmake -DCMAKE_BUILD_TYPE=Release ..
-```
-
-Optional:
-
-```bash
-cmake -DENABLE_PYTHON=ON ..
+cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DENABLE_PYTHON=ON          # optional pybind11 build
 ```
 
 ---
 
-## 🎯 Example Output
+## 📊 Example Output
 
 ```
-Fetching AAPL...
-  Date: 2023-05-10, Price: 165.32
-...
+Fetching: AAPL, MSFT, JPM...
+
+Returns:
+  AAPL: 0.0123
+  MSFT: 0.0098
+  JPM : 0.0075
+
 Covariance Matrix:
-AAPL  MSFT  JPM
-0.002 0.001 0.0009
-...
+        AAPL     MSFT     JPM
+AAPL    0.002    0.0012   0.0009
+MSFT    0.0012   0.0021   0.001
+JPM     0.0009   0.001    0.0022
+
 Optimised Weights:
-AAPL: 0.4, MSFT: 0.3, JPM: 0.3
+  AAPL:  40%
+  MSFT:  30%
+  JPM :  30%
 ```
 
 ---
 
-## 💪 Contributing
+## 🧠 Roadmap
 
-Open to PRs on:
-
-* Front-end dashboard (React/Plotly)
-* Broker integration
-* Backtesting engine
-
----
-
-## 📅 License
-
-MIT License.
+- [x] Core StatsEngine (Sharpe, Sortino, Alpha, Drawdown)
+- [x] CMake + CI Integration (GitHub Actions)
+- [x] GTest migration from Catch2
+- [ ] API mocking for test coverage
+- [ ] Python bindings (via `pybind11`)
+- [ ] React dashboard with charting
+- [ ] Broker simulation (paper trade mode)
 
 ---
 
-*Built for learning. Extend for real.*
+## 💡 Contributing
+
+Pull requests welcome for:
+
+- 📈 Financial metrics or portfolio models
+- 🌐 Frontend dashboard (React + Plotly)
+- 🧪 Test coverage improvements
+- ⚙️ CI tools, linters, CMake tweaks
+
+---
+
+## 🛡 License
+
+[MIT License](LICENSE)
+
+---
+
+### 👨‍💻 Built for learning. Extend for production.  
+*Quant tools should be accessible, modular, and reproducible.*
