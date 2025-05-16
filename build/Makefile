@@ -510,29 +510,29 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main_exec.dir/build.make CMakeFiles/main_exec.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/stats/caputre.o: src/stats/caputre.cpp.o
-.PHONY : src/stats/caputre.o
+src/stats/capture.o: src/stats/capture.cpp.o
+.PHONY : src/stats/capture.o
 
 # target to build an object file
-src/stats/caputre.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stats.dir/build.make CMakeFiles/stats.dir/src/stats/caputre.cpp.o
-.PHONY : src/stats/caputre.cpp.o
+src/stats/capture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stats.dir/build.make CMakeFiles/stats.dir/src/stats/capture.cpp.o
+.PHONY : src/stats/capture.cpp.o
 
-src/stats/caputre.i: src/stats/caputre.cpp.i
-.PHONY : src/stats/caputre.i
+src/stats/capture.i: src/stats/capture.cpp.i
+.PHONY : src/stats/capture.i
 
 # target to preprocess a source file
-src/stats/caputre.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stats.dir/build.make CMakeFiles/stats.dir/src/stats/caputre.cpp.i
-.PHONY : src/stats/caputre.cpp.i
+src/stats/capture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stats.dir/build.make CMakeFiles/stats.dir/src/stats/capture.cpp.i
+.PHONY : src/stats/capture.cpp.i
 
-src/stats/caputre.s: src/stats/caputre.cpp.s
-.PHONY : src/stats/caputre.s
+src/stats/capture.s: src/stats/capture.cpp.s
+.PHONY : src/stats/capture.s
 
 # target to generate assembly for a file
-src/stats/caputre.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/stats.dir/build.make CMakeFiles/stats.dir/src/stats/caputre.cpp.s
-.PHONY : src/stats/caputre.cpp.s
+src/stats/capture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/stats.dir/build.make CMakeFiles/stats.dir/src/stats/capture.cpp.s
+.PHONY : src/stats/capture.cpp.s
 
 src/stats/correlation.o: src/stats/correlation.cpp.o
 .PHONY : src/stats/correlation.o
@@ -964,9 +964,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/stats/caputre.o"
-	@echo "... src/stats/caputre.i"
-	@echo "... src/stats/caputre.s"
+	@echo "... src/stats/capture.o"
+	@echo "... src/stats/capture.i"
+	@echo "... src/stats/capture.s"
 	@echo "... src/stats/correlation.o"
 	@echo "... src/stats/correlation.i"
 	@echo "... src/stats/correlation.s"

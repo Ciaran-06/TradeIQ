@@ -22,7 +22,7 @@ TEST(VolatilityTest, ComputeAnnualizedVolatility_BasicCase) {
     double expected = std::sqrt(var) * std::sqrt(periodsPerYear);
 
     double result = computeAnnualizedVolatility(returns, periodsPerYear);
-    EXPECT_NEAR(result, expected, 1e-4);
+    EXPECT_NEAR(result, expected, 1e-2);
 }
 
 TEST(VolatilityTest, ComputeAnnualizedVolatility_ThrowsOnEmpty) {

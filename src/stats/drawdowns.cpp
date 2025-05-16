@@ -3,87 +3,117 @@
 #include <stdexcept>
 #include <cmath>
 
-namespace Stats::Drawdowns {
+namespace Stats::Drawdowns
+{
 
-double computeMaxDrawdown(const std::vector<double>& cumulativeReturns) {
-    if (cumulativeReturns.empty()) return 0.0;
+    double computeMaxDrawdown(const std::vector<double> &cumulativeReturns)
+    {
+        if (cumulativeReturns.empty())
+            return 0.0;
 
-    double peak = cumulativeReturns[0];
-    double maxDrawdown = 0.0;
+        double peak = cumulativeReturns[0];
+        double maxDrawdown = 0.0;
 
-    for (const auto& val : cumulativeReturns) {
-        if (val > peak)
-            peak = val;
-        double drawdown = (peak - val) / peak;
-        if (drawdown > maxDrawdown)
-            maxDrawdown = drawdown;
+        for (const auto &val : cumulativeReturns)
+        {
+            if (val > peak)
+                peak = val;
+            double drawdown = (peak - val) / peak;
+            if (drawdown > maxDrawdown)
+                maxDrawdown = drawdown;
+        }
+
+        return maxDrawdown;
     }
 
-    return maxDrawdown;
-}
+    int computeMaxRecoveryTime(const std::vector<double> &cumulativeReturns)
+    {
+        if (cumulativeReturns.empty())
+            return 0;
 
-int computeMaxRecoveryTime(const std::vector<double>& cumulativeReturns) {
-    if (cumulativeReturns.empty()) return 0;
+        double peak = cumulativeReturns[0];
+        size_t peakIndex = 0;
+        int maxRecovery = 0;
 
-    double peak = cumulativeReturns[0];
-    size_t peakIndex = 0;
-    int maxRecovery = 0;
-
-    for (size_t i = 1; i < cumulativeReturns.size(); ++i) {
-        if (cumulativeReturns[i] > peak) {
-            peak = cumulativeReturns[i];
-            peakIndex = i;
-        } else {
-            size_t recoveryIndex = i;
-            while (recoveryIndex < cumulativeReturns.size() &&
-                   cumulativeReturns[recoveryIndex] < peak) {
-                ++recoveryIndex;
+        for (size_t i = 1; i < cumulativeReturns.size(); ++i)
+        {
+            if (cumulativeReturns[i] > peak)
+            {
+                peak = cumulativeReturns[i];
+                peakIndex = i;
             }
+            else
+            {
+                size_t recoveryIndex = i;
+                while (recoveryIndex < cumulativeReturns.size() &&
+                       cumulativeReturns[recoveryIndex] < peak)
+                {
+                    ++recoveryIndex;
+                }
 
-            if (recoveryIndex < cumulativeReturns.size()) {
-                int recoveryTime = static_cast<int>(recoveryIndex - i + 1);
-                if (recoveryTime > maxRecovery)
-                    maxRecovery = recoveryTime;
-            } else {
-                int remaining = static_cast<int>(cumulativeReturns.size() - i);
-                if (remaining > maxRecovery)
-                    maxRecovery = remaining;
+                if (recoveryIndex < cumulativeReturns.size())
+                {
+                    int recoveryTime = static_cast<int>(recoveryIndex - i); // ❗️Fixed here
+                    if (recoveryTime > maxRecovery)
+                        maxRecovery = recoveryTime;
+                }
+                else
+                {
+                    int remaining = static_cast<int>(cumulativeReturns.size() - i);
+                    if (remaining > maxRecovery)
+                        maxRecovery = remaining;
+                }
             }
         }
+
+        return maxRecovery;
     }
 
-    return maxRecovery;
-}
+    double computeAverageDrawdown(const std::vector<double> &cumulativeReturns)
+    {
+        if (cumulativeReturns.empty())
+            return 0.0;
 
-double computeAverageDrawdown(const std::vector<double>& cumulativeReturns) {
-    if (cumulativeReturns.empty()) return 0.0;
+        double peak = cumulativeReturns[0];
+        double trough = cumulativeReturns[0];
+        double drawdownSum = 0.0;
+        int drawdownCount = 0;
+        bool inDrawdown = false;
 
-    double peak = cumulativeReturns[0];
-    double drawdownSum = 0.0;
-    int drawdownCount = 0;
-    bool inDrawdown = false;
-    double currentDrawdown = 0.0;
+        for (size_t i = 1; i < cumulativeReturns.size(); ++i)
+        {
+            double val = cumulativeReturns[i];
 
-    for (const auto& val : cumulativeReturns) {
-        if (val > peak) {
-            if (inDrawdown) {
-                drawdownSum += currentDrawdown;
-                drawdownCount++;
-                inDrawdown = false;
+            if (val > peak)
+            {
+                // Closing any existing drawdown
+                if (inDrawdown)
+                {
+                    double dd = (peak - trough) / peak;
+                    drawdownSum += dd;
+                    drawdownCount++;
+                    inDrawdown = false;
+                }
+
+                peak = val;
+                trough = val;
             }
-            peak = val;
-        } else {
-            inDrawdown = true;
-            currentDrawdown = (peak - val) / peak;
+            else
+            {
+                inDrawdown = true;
+                trough = std::min(trough, val);
+            }
         }
-    }
 
-    if (inDrawdown) {
-        drawdownSum += currentDrawdown;
-        drawdownCount++;
-    }
+        // Handle drawdown at end of series
+        if (inDrawdown)
+        {
+            double dd = (peak - trough) / peak;
+            drawdownSum += dd;
+            drawdownCount++;
+        }
 
-    return drawdownCount == 0 ? 0.0 : drawdownSum / drawdownCount;
-}
+        return drawdownCount == 0 ? 0.0 : drawdownSum / drawdownCount;
+    }
 
 } // namespace Stats::Drawdowns

@@ -25,20 +25,17 @@ TEST(ReturnsTest, ComputeDailyReturns_Normal) {
 
 TEST(ReturnsTest, ComputeDailyReturns_Empty) {
     PriceSeries ps("EMPTY", {}, {});
-    auto returns = computeDailyReturns(ps);
-    EXPECT_TRUE(returns.empty());
+    EXPECT_THROW(computeDailyReturns(ps), std::invalid_argument);
 }
 
 TEST(ReturnsTest, ComputeDailyReturns_SinglePrice) {
     PriceSeries ps("ONE", {"2023-01-01"}, {100.0});
-    auto returns = computeDailyReturns(ps);
-    EXPECT_TRUE(returns.empty());
+    EXPECT_THROW(computeDailyReturns(ps), std::invalid_argument);
 }
 
 TEST(ReturnsTest, ComputeDailyReturns_DivideByZero) {
     PriceSeries ps("ZERO", {"2023-01-01", "2023-01-02"}, {0.0, 100.0});
-    auto returns = computeDailyReturns(ps);
-    EXPECT_TRUE(returns.empty());
+    EXPECT_THROW(computeDailyReturns(ps), std::invalid_argument);
 }
 
 TEST(ReturnsTest, MeanReturns_Normal) {
@@ -59,7 +56,7 @@ TEST(ReturnsTest, ComputeTotalReturn_Normal) {
 }
 
 TEST(ReturnsTest, ComputeTotalReturn_SinglePoint) {
-    PriceSeries ps("ONE", {"", ""}, {100});
+    PriceSeries ps("ONE", {""}, {100});  // One price only
     EXPECT_THROW(computeTotalReturn(ps), std::invalid_argument);
 }
 

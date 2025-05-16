@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/ciarangaffney/TradeIQ/src/stats/caputre.cpp" "CMakeFiles/stats.dir/src/stats/caputre.cpp.o" "gcc" "CMakeFiles/stats.dir/src/stats/caputre.cpp.o.d"
+  "/Users/ciarangaffney/TradeIQ/src/stats/capture.cpp" "CMakeFiles/stats.dir/src/stats/capture.cpp.o" "gcc" "CMakeFiles/stats.dir/src/stats/capture.cpp.o.d"
   "/Users/ciarangaffney/TradeIQ/src/stats/correlation.cpp" "CMakeFiles/stats.dir/src/stats/correlation.cpp.o" "gcc" "CMakeFiles/stats.dir/src/stats/correlation.cpp.o.d"
   "/Users/ciarangaffney/TradeIQ/src/stats/distribution.cpp" "CMakeFiles/stats.dir/src/stats/distribution.cpp.o" "gcc" "CMakeFiles/stats.dir/src/stats/distribution.cpp.o.d"
   "/Users/ciarangaffney/TradeIQ/src/stats/drawdowns.cpp" "CMakeFiles/stats.dir/src/stats/drawdowns.cpp.o" "gcc" "CMakeFiles/stats.dir/src/stats/drawdowns.cpp.o.d"

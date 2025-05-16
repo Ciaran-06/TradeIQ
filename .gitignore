@@ -1,0 +1,51 @@
+# === C++ / CMake ===
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+*.cmake
+*.dir/
+/*.o
+/*.obj
+/*.so
+/*.dll
+/*.dylib
+/*.a
+/*.lib
+/*.exe
+
+# === Catch/GoogleTest Artifacts ===
+/lib/
+/bin/
+/tests/bin/
+/googletest-*/
+*/gtest-*
+*/gmock-*
+
+# === Python ===
+__pycache__/
+/*.pyc
+*.pyo
+*.pyd
+env/
+/venv/
+/.python-version
+
+# === Editors & IDEs ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === macOS / Windows ===
+.DS_Store
+Thumbs.db
+
+# === Logs & temp ===
+*.log
+*.tmp
+*.swp
+*.bak
+
+# === Custom ===
+/src/**/caputre.cpp  # typo placeholder if needed

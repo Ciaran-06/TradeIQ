@@ -1,10 +1,10 @@
 Performing Curl Test HAVE_FSETXATTR_5 failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_49a7f/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_49a7f.dir/build.make CMakeFiles/cmTC_49a7f.dir/build
-Building C object CMakeFiles/cmTC_49a7f.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_FSETXATTR_5  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_49a7f.dir/CurlTests.c.o -MF CMakeFiles/cmTC_49a7f.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_49a7f.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1d2c/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f1d2c.dir/build.make CMakeFiles/cmTC_f1d2c.dir/build
+Building C object CMakeFiles/cmTC_f1d2c.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_FSETXATTR_5  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_f1d2c.dir/CurlTests.c.o -MF CMakeFiles/cmTC_f1d2c.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_f1d2c.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:451:26: error: too few arguments to function call, expected 6, have 5
   fsetxattr(0, 0, 0, 0, 0);
   ~~~~~~~~~              ^
@@ -12,17 +12,17 @@ Building C object CMakeFiles/cmTC_49a7f.dir/CurlTests.c.o
 int fsetxattr(int fd, const char *name, const void *value, size_t size, u_int32_t position, int options);
     ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_49a7f.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_49a7f/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_f1d2c.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_f1d2c/fast] Error 2
 
 
 Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8636f/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8636f.dir/build.make CMakeFiles/cmTC_8636f.dir/build
-Building C object CMakeFiles/cmTC_8636f.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_IOCTLSOCKET  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_8636f.dir/CurlTests.c.o -MF CMakeFiles/cmTC_8636f.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_8636f.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_53e61/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_53e61.dir/build.make CMakeFiles/cmTC_53e61.dir/build
+Building C object CMakeFiles/cmTC_53e61.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_IOCTLSOCKET  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_53e61.dir/CurlTests.c.o -MF CMakeFiles/cmTC_53e61.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_53e61.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:241:24: error: call to undeclared function 'ioctlsocket'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
                        ^
@@ -30,32 +30,32 @@ Building C object CMakeFiles/cmTC_8636f.dir/CurlTests.c.o
  unsigned long flags = ioctlsocket(socket, FIONBIO, &flags);
                                            ^
 2 errors generated.
-make[2]: *** [CMakeFiles/cmTC_8636f.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_8636f/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_53e61.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_53e61/fast] Error 2
 
 
 Performing Curl Test HAVE_IOCTLSOCKET_CAMEL failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5e874/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5e874.dir/build.make CMakeFiles/cmTC_5e874.dir/build
-Building C object CMakeFiles/cmTC_5e874.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_5e874.dir/CurlTests.c.o -MF CMakeFiles/cmTC_5e874.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_5e874.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5c0e9/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5c0e9.dir/build.make CMakeFiles/cmTC_5c0e9.dir/build
+Building C object CMakeFiles/cmTC_5c0e9.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_IOCTLSOCKET_CAMEL  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_5c0e9.dir/CurlTests.c.o -MF CMakeFiles/cmTC_5c0e9.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_5c0e9.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:265:13: error: call to undeclared function 'IoctlSocket'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
     if(0 != IoctlSocket(0, 0, 0))
             ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_5e874.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_5e874/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_5c0e9.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_5c0e9/fast] Error 2
 
 
 Performing Curl Test HAVE_IOCTLSOCKET_CAMEL_FIONBIO failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3ee51/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3ee51.dir/build.make CMakeFiles/cmTC_3ee51.dir/build
-Building C object CMakeFiles/cmTC_3ee51.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_3ee51.dir/CurlTests.c.o -MF CMakeFiles/cmTC_3ee51.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_3ee51.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8da55/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8da55.dir/build.make CMakeFiles/cmTC_8da55.dir/build
+Building C object CMakeFiles/cmTC_8da55.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_IOCTLSOCKET_CAMEL_FIONBIO  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_8da55.dir/CurlTests.c.o -MF CMakeFiles/cmTC_8da55.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_8da55.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:289:17: error: call to undeclared function 'IoctlSocket'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
         if(0 != IoctlSocket(0, FIONBIO, &flags))
                 ^
@@ -63,17 +63,17 @@ Building C object CMakeFiles/cmTC_3ee51.dir/CurlTests.c.o
         if(0 != IoctlSocket(0, FIONBIO, &flags))
                                ^
 2 errors generated.
-make[2]: *** [CMakeFiles/cmTC_3ee51.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_3ee51/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_8da55.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_8da55/fast] Error 2
 
 
 Performing Curl Test HAVE_IOCTLSOCKET_FIONBIO failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_eea42/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_eea42.dir/build.make CMakeFiles/cmTC_eea42.dir/build
-Building C object CMakeFiles/cmTC_eea42.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_eea42.dir/CurlTests.c.o -MF CMakeFiles/cmTC_eea42.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_eea42.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4ec0f/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ec0f.dir/build.make CMakeFiles/cmTC_4ec0f.dir/build
+Building C object CMakeFiles/cmTC_4ec0f.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_IOCTLSOCKET_FIONBIO  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_4ec0f.dir/CurlTests.c.o -MF CMakeFiles/cmTC_4ec0f.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_4ec0f.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:312:17: error: call to undeclared function 'ioctlsocket'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
         if(0 != ioctlsocket(0, FIONBIO, &flags))
                 ^
@@ -81,51 +81,51 @@ Building C object CMakeFiles/cmTC_eea42.dir/CurlTests.c.o
         if(0 != ioctlsocket(0, FIONBIO, &flags))
                                ^
 2 errors generated.
-make[2]: *** [CMakeFiles/cmTC_eea42.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_eea42/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_4ec0f.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_4ec0f/fast] Error 2
 
 
 Performing Curl Test HAVE_SETSOCKOPT_SO_NONBLOCK failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f8429/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f8429.dir/build.make CMakeFiles/cmTC_f8429.dir/build
-Building C object CMakeFiles/cmTC_f8429.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_f8429.dir/CurlTests.c.o -MF CMakeFiles/cmTC_f8429.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_f8429.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_33ac2/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_33ac2.dir/build.make CMakeFiles/cmTC_33ac2.dir/build
+Building C object CMakeFiles/cmTC_33ac2.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_SETSOCKOPT_SO_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_33ac2.dir/CurlTests.c.o -MF CMakeFiles/cmTC_33ac2.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_33ac2.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:404:43: error: use of undeclared identifier 'SO_NONBLOCK'
         if(0 != setsockopt(0, SOL_SOCKET, SO_NONBLOCK, 0, 0))
                                           ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_f8429.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_f8429/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_33ac2.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_33ac2/fast] Error 2
 
 
 Performing Curl Test HAVE_O_NONBLOCK failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7c3e4/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7c3e4.dir/build.make CMakeFiles/cmTC_7c3e4.dir/build
-Building C object CMakeFiles/cmTC_7c3e4.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_O_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_7c3e4.dir/CurlTests.c.o -MF CMakeFiles/cmTC_7c3e4.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_7c3e4.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
-Linking C executable cmTC_7c3e4
-/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c3e4.dir/link.txt --verbose=1
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f1000/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f1000.dir/build.make CMakeFiles/cmTC_f1000.dir/build
+Building C object CMakeFiles/cmTC_f1000.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_O_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_f1000.dir/CurlTests.c.o -MF CMakeFiles/cmTC_f1000.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_f1000.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Linking C executable cmTC_f1000
+/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1000.dir/link.txt --verbose=1
 Undefined symbols for architecture arm64:
   "_main", referenced from:
       <initial-undefines>
 ld: symbol(s) not found for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
-/usr/bin/cc  -DHAVE_O_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7c3e4.dir/CurlTests.c.o -o cmTC_7c3e4
-make[2]: *** [cmTC_7c3e4] Error 1
-make[1]: *** [cmTC_7c3e4/fast] Error 2
+/usr/bin/cc  -DHAVE_O_NONBLOCK  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f1000.dir/CurlTests.c.o -o cmTC_f1000
+make[2]: *** [cmTC_f1000] Error 1
+make[1]: *** [cmTC_f1000/fast] Error 2
 
 
 Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c6b9a/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c6b9a.dir/build.make CMakeFiles/cmTC_c6b9a.dir/build
-Building C object CMakeFiles/cmTC_c6b9a.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_c6b9a.dir/CurlTests.c.o -MF CMakeFiles/cmTC_c6b9a.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_c6b9a.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_07611/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_07611.dir/build.make CMakeFiles/cmTC_07611.dir/build
+Building C object CMakeFiles/cmTC_07611.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_3  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_07611.dir/CurlTests.c.o -MF CMakeFiles/cmTC_07611.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_07611.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:97:23: error: variable has incomplete type 'struct hostent_data'
   struct hostent_data hdata;
                       ^
@@ -136,47 +136,47 @@ Building C object CMakeFiles/cmTC_c6b9a.dir/CurlTests.c.o
   rc = gethostbyname_r(address, &h, &hdata);
        ^
 2 errors generated.
-make[2]: *** [CMakeFiles/cmTC_c6b9a.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_c6b9a/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_07611.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_07611/fast] Error 2
 
 
 Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8e52b/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8e52b.dir/build.make CMakeFiles/cmTC_8e52b.dir/build
-Building C object CMakeFiles/cmTC_8e52b.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_8e52b.dir/CurlTests.c.o -MF CMakeFiles/cmTC_8e52b.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_8e52b.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_190bb/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_190bb.dir/build.make CMakeFiles/cmTC_190bb.dir/build
+Building C object CMakeFiles/cmTC_190bb.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_5  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_190bb.dir/CurlTests.c.o -MF CMakeFiles/cmTC_190bb.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_190bb.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:112:8: error: call to undeclared function 'gethostbyname_r'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
        ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_8e52b.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_8e52b/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_190bb.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_190bb/fast] Error 2
 
 
 Performing Curl Test HAVE_GETHOSTBYNAME_R_6 failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_48789/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48789.dir/build.make CMakeFiles/cmTC_48789.dir/build
-Building C object CMakeFiles/cmTC_48789.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_6  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_48789.dir/CurlTests.c.o -MF CMakeFiles/cmTC_48789.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_48789.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_68e8a/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_68e8a.dir/build.make CMakeFiles/cmTC_68e8a.dir/build
+Building C object CMakeFiles/cmTC_68e8a.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_6  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_68e8a.dir/CurlTests.c.o -MF CMakeFiles/cmTC_68e8a.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_68e8a.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:116:8: error: call to undeclared function 'gethostbyname_r'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
   rc = gethostbyname_r(address, &h, buffer, 8192, &hp, &h_errnop);
        ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_48789.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_48789/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_68e8a.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_68e8a/fast] Error 2
 
 
 Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_23d41/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_23d41.dir/build.make CMakeFiles/cmTC_23d41.dir/build
-Building C object CMakeFiles/cmTC_23d41.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_23d41.dir/CurlTests.c.o -MF CMakeFiles/cmTC_23d41.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_23d41.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d5cc9/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d5cc9.dir/build.make CMakeFiles/cmTC_d5cc9.dir/build
+Building C object CMakeFiles/cmTC_d5cc9.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_3_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_d5cc9.dir/CurlTests.c.o -MF CMakeFiles/cmTC_d5cc9.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_d5cc9.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:97:23: error: variable has incomplete type 'struct hostent_data'
   struct hostent_data hdata;
                       ^
@@ -187,52 +187,52 @@ Building C object CMakeFiles/cmTC_23d41.dir/CurlTests.c.o
   rc = gethostbyname_r(address, &h, &hdata);
        ^
 2 errors generated.
-make[2]: *** [CMakeFiles/cmTC_23d41.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_23d41/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_d5cc9.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_d5cc9/fast] Error 2
 
 
 Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c9c3c/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c9c3c.dir/build.make CMakeFiles/cmTC_c9c3c.dir/build
-Building C object CMakeFiles/cmTC_c9c3c.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_c9c3c.dir/CurlTests.c.o -MF CMakeFiles/cmTC_c9c3c.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_c9c3c.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_85685/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_85685.dir/build.make CMakeFiles/cmTC_85685.dir/build
+Building C object CMakeFiles/cmTC_85685.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_5_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_85685.dir/CurlTests.c.o -MF CMakeFiles/cmTC_85685.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_85685.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:112:8: error: call to undeclared function 'gethostbyname_r'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
   rc = gethostbyname_r(address, &h, buffer, 8192, &h_errnop);
        ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_c9c3c.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_c9c3c/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_85685.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_85685/fast] Error 2
 
 
 Performing Curl Test HAVE_GETHOSTBYNAME_R_6_REENTRANT failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c4339/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c4339.dir/build.make CMakeFiles/cmTC_c4339.dir/build
-Building C object CMakeFiles/cmTC_c4339.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_6_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_c4339.dir/CurlTests.c.o -MF CMakeFiles/cmTC_c4339.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_c4339.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c35eb/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c35eb.dir/build.make CMakeFiles/cmTC_c35eb.dir/build
+Building C object CMakeFiles/cmTC_c35eb.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GETHOSTBYNAME_R_6_REENTRANT  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_c35eb.dir/CurlTests.c.o -MF CMakeFiles/cmTC_c35eb.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_c35eb.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:116:8: error: call to undeclared function 'gethostbyname_r'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
   rc = gethostbyname_r(address, &h, buffer, 8192, &hp, &h_errnop);
        ^
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_c4339.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_c4339/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_c35eb.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_c35eb/fast] Error 2
 
 
 Performing Curl Test HAVE_GLIBC_STRERROR_R failed with the following output:
 Change Dir: '/Users/ciarangaffney/TradeIQ/build/CMakeFiles/CMakeTmp'
 
-Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_1f028/fast
-/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1f028.dir/build.make CMakeFiles/cmTC_1f028.dir/build
-Building C object CMakeFiles/cmTC_1f028.dir/CurlTests.c.o
-/usr/bin/cc   -DHAVE_GLIBC_STRERROR_R  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_1f028.dir/CurlTests.c.o -MF CMakeFiles/cmTC_1f028.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_1f028.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
+Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_57f69/fast
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_57f69.dir/build.make CMakeFiles/cmTC_57f69.dir/build
+Building C object CMakeFiles/cmTC_57f69.dir/CurlTests.c.o
+/usr/bin/cc   -DHAVE_GLIBC_STRERROR_R  -DHAVE_LIBSSH2_H -DHAVE_STDIO_H -DHAVE_INTTYPES_H -DHAVE_SYS_FILIO_H -DHAVE_SYS_IOCTL_H -DHAVE_SYS_PARAM_H -DHAVE_SYS_POLL_H -DHAVE_SYS_RESOURCE_H -DHAVE_SYS_SELECT_H -DHAVE_SYS_SOCKET_H -DHAVE_SYS_SOCKIO_H -DHAVE_SYS_STAT_H -DHAVE_SYS_TIME_H -DHAVE_SYS_TYPES_H -DHAVE_SYS_UIO_H -DHAVE_SYS_UN_H -DHAVE_SYS_XATTR_H -DHAVE_ALLOCA_H -DHAVE_ARPA_INET_H -DHAVE_ARPA_TFTP_H -DHAVE_ASSERT_H -DHAVE_ERRNO_H -DHAVE_FCNTL_H -DHAVE_IFADDRS_H -DHAVE_LIBGEN_H -DHAVE_LOCALE_H -DHAVE_NET_IF_H -DHAVE_NETDB_H -DHAVE_NETINET_IN_H -DHAVE_NETINET_TCP_H -DHAVE_POLL_H -DHAVE_PWD_H -DHAVE_SETJMP_H -DHAVE_SIGNAL_H -DHAVE_STDBOOL_H -DHAVE_STDINT_H -DHAVE_STDIO_H -DHAVE_STDLIB_H -DHAVE_STRING_H -DHAVE_STRINGS_H -DHAVE_TERMIOS_H -DHAVE_TIME_H -DHAVE_UNISTD_H -DHAVE_UTIME_H -DHAVE_STDDEF_H -DHAVE_DLFCN_H -DHAVE_MEMORY_H -DHAVE_NETINET_IF_ETHER_H -DHAVE_STDINT_H -DHAVE_SYS_UTSNAME_H -arch arm64 -MD -MT CMakeFiles/cmTC_57f69.dir/CurlTests.c.o -MF CMakeFiles/cmTC_57f69.dir/CurlTests.c.o.d -o CMakeFiles/cmTC_57f69.dir/CurlTests.c.o -c /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c
 /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/CMake/CurlTests.c:420:51: error: subscripted value is not an array, pointer, or vector
   check(strerror_r(EACCES, buffer, sizeof(buffer))[0]);
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
 1 error generated.
-make[2]: *** [CMakeFiles/cmTC_1f028.dir/CurlTests.c.o] Error 1
-make[1]: *** [cmTC_1f028/fast] Error 2
+make[2]: *** [CMakeFiles/cmTC_57f69.dir/CurlTests.c.o] Error 1
+make[1]: *** [cmTC_57f69/fast] Error 2
 
 

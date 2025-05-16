@@ -72,19 +72,19 @@ include CMakeFiles/stats.dir/flags.make
 CMakeFiles/stats.dir/codegen:
 .PHONY : CMakeFiles/stats.dir/codegen
 
-CMakeFiles/stats.dir/src/stats/caputre.cpp.o: CMakeFiles/stats.dir/flags.make
-CMakeFiles/stats.dir/src/stats/caputre.cpp.o: /Users/ciarangaffney/TradeIQ/src/stats/caputre.cpp
-CMakeFiles/stats.dir/src/stats/caputre.cpp.o: CMakeFiles/stats.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stats.dir/src/stats/caputre.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stats.dir/src/stats/caputre.cpp.o -MF CMakeFiles/stats.dir/src/stats/caputre.cpp.o.d -o CMakeFiles/stats.dir/src/stats/caputre.cpp.o -c /Users/ciarangaffney/TradeIQ/src/stats/caputre.cpp
+CMakeFiles/stats.dir/src/stats/capture.cpp.o: CMakeFiles/stats.dir/flags.make
+CMakeFiles/stats.dir/src/stats/capture.cpp.o: /Users/ciarangaffney/TradeIQ/src/stats/capture.cpp
+CMakeFiles/stats.dir/src/stats/capture.cpp.o: CMakeFiles/stats.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/stats.dir/src/stats/capture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/stats.dir/src/stats/capture.cpp.o -MF CMakeFiles/stats.dir/src/stats/capture.cpp.o.d -o CMakeFiles/stats.dir/src/stats/capture.cpp.o -c /Users/ciarangaffney/TradeIQ/src/stats/capture.cpp
 
-CMakeFiles/stats.dir/src/stats/caputre.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stats.dir/src/stats/caputre.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/stats/caputre.cpp > CMakeFiles/stats.dir/src/stats/caputre.cpp.i
+CMakeFiles/stats.dir/src/stats/capture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/stats.dir/src/stats/capture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/stats/capture.cpp > CMakeFiles/stats.dir/src/stats/capture.cpp.i
 
-CMakeFiles/stats.dir/src/stats/caputre.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stats.dir/src/stats/caputre.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/stats/caputre.cpp -o CMakeFiles/stats.dir/src/stats/caputre.cpp.s
+CMakeFiles/stats.dir/src/stats/capture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/stats.dir/src/stats/capture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/stats/capture.cpp -o CMakeFiles/stats.dir/src/stats/capture.cpp.s
 
 CMakeFiles/stats.dir/src/stats/correlation.cpp.o: CMakeFiles/stats.dir/flags.make
 CMakeFiles/stats.dir/src/stats/correlation.cpp.o: /Users/ciarangaffney/TradeIQ/src/stats/correlation.cpp
@@ -186,7 +186,7 @@ CMakeFiles/stats.dir/src/stats/volatility.cpp.s: cmake_force
 
 # Object files for target stats
 stats_OBJECTS = \
-"CMakeFiles/stats.dir/src/stats/caputre.cpp.o" \
+"CMakeFiles/stats.dir/src/stats/capture.cpp.o" \
 "CMakeFiles/stats.dir/src/stats/correlation.cpp.o" \
 "CMakeFiles/stats.dir/src/stats/distribution.cpp.o" \
 "CMakeFiles/stats.dir/src/stats/drawdowns.cpp.o" \
@@ -198,7 +198,7 @@ stats_OBJECTS = \
 # External object files for target stats
 stats_EXTERNAL_OBJECTS =
 
-libstats.a: CMakeFiles/stats.dir/src/stats/caputre.cpp.o
+libstats.a: CMakeFiles/stats.dir/src/stats/capture.cpp.o
 libstats.a: CMakeFiles/stats.dir/src/stats/correlation.cpp.o
 libstats.a: CMakeFiles/stats.dir/src/stats/distribution.cpp.o
 libstats.a: CMakeFiles/stats.dir/src/stats/drawdowns.cpp.o

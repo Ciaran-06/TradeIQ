@@ -14,7 +14,7 @@ using namespace Stats::Drawdowns;
 TEST(DrawdownsTest, MaxDrawdown_Basic) {
     std::vector<double> cumReturns = {1.0, 1.1, 0.95, 0.92, 1.05, 1.2, 1.0};
     double result = computeMaxDrawdown(cumReturns);
-    EXPECT_NEAR(result, (1.1 - 0.92) / 1.1, 1e-6);
+    EXPECT_NEAR(result, (1.2 - 1.0) / 1.2, 1e-6);  // 0.166666...
 }
 
 TEST(DrawdownsTest, MaxDrawdown_NoDrawdown) {
@@ -36,7 +36,7 @@ TEST(DrawdownsTest, MaxRecoveryTime_Basic) {
 TEST(DrawdownsTest, MaxRecoveryTime_MultipleDrawdowns) {
     std::vector<double> cumReturns = {100, 98, 100, 95, 97, 100, 90, 95, 100};
     int result = computeMaxRecoveryTime(cumReturns);
-    EXPECT_EQ(result, 3);  // 90 → 100 is longest
+    EXPECT_EQ(result, 2);  // 90 (idx 6) → 100 (idx 8): 2 steps
 }
 
 TEST(DrawdownsTest, MaxRecoveryTime_NoDrawdown) {

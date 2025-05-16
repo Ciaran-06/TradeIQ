@@ -2,6 +2,7 @@
 #include <cmath>
 #include <stdexcept>
 #include <numeric>
+#include <unordered_set>
 
 namespace Stats::Utils {
 
@@ -10,6 +11,8 @@ double computeSkewness(const std::vector<double> &returns) {
     if (n < 3)
         throw std::invalid_argument("Skewness requires at least 3 data points.");
 
+    std::unordered_set<double> s(returns.begin(), returns.end());
+    if(s.size() == 1 ) throw std::invalid_argument("All elements in this vector are identical");
     double mean = std::accumulate(returns.begin(), returns.end(), 0.0) / n;
 
     double m2 = 0.0, m3 = 0.0;
