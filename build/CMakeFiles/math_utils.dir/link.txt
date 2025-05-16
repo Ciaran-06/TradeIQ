@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmath_utils.a CMakeFiles/math_utils.dir/src/utils/math_utils.cpp.o
-/usr/bin/ranlib libmath_utils.a
