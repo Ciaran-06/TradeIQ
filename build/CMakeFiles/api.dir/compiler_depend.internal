@@ -286,8 +286,13 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/popcount.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/chars_format.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_floating_point.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h
@@ -298,12 +303,15 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/day.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/formatter.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month_weekday.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/monthday.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/ostream.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/parser_std_format_spec.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/statically_widen.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h
@@ -377,20 +385,31 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg_store.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_args.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_error.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_functions.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_fwd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_to_n_result.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_bool.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_char.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_floating_point.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integer.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integral.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_output.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_pointer.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/unicode.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/width_estimation_table.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h
@@ -741,6 +760,7 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale
@@ -804,7 +824,6 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/vector
@@ -812,15 +831,6 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/curl.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/curlver.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/easy.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/header.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/multi.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/options.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/system.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/urlapi.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/websockets.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/OSByteOrder.h
@@ -962,59 +972,65 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-build/cpr_generated_includes/cpr/cprver.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/accept_encoding.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/api.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/async.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/async_wrapper.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/auth.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/bearer.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/body.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/buffer.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/callback.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cert_info.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/connect_timeout.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cookies.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cpr.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cprtypes.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curl_container.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curlholder.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curlmultiholder.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/error.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/file.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/filesystem.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/http_version.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/interceptor.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/interface.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/limit_rate.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/local_port.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/local_port_range.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/low_speed.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/multipart.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/multiperform.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/parameters.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/payload.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/proxies.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/proxyauth.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/range.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/redirect.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/reserve_size.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/resolve.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/response.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/session.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/singleton.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/ssl_ctx.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/ssl_options.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/status_codes.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/threadpool.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/timeout.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/unix_socket.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/user_agent.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/util.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/verbose.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/curl.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/curlver.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/easy.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/multi.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/options.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/system.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/urlapi.h
  /Users/ciarangaffney/TradeIQ/src/api/default_http_client.hpp
  /Users/ciarangaffney/TradeIQ/src/api/http_client.hpp
- /usr/local/include/cpr/accept_encoding.h
- /usr/local/include/cpr/api.h
- /usr/local/include/cpr/async.h
- /usr/local/include/cpr/async_wrapper.h
- /usr/local/include/cpr/auth.h
- /usr/local/include/cpr/bearer.h
- /usr/local/include/cpr/body.h
- /usr/local/include/cpr/buffer.h
- /usr/local/include/cpr/callback.h
- /usr/local/include/cpr/cert_info.h
- /usr/local/include/cpr/connect_timeout.h
- /usr/local/include/cpr/cookies.h
- /usr/local/include/cpr/cpr.h
- /usr/local/include/cpr/cprtypes.h
- /usr/local/include/cpr/cprver.h
- /usr/local/include/cpr/curl_container.h
- /usr/local/include/cpr/curlholder.h
- /usr/local/include/cpr/curlmultiholder.h
- /usr/local/include/cpr/error.h
- /usr/local/include/cpr/file.h
- /usr/local/include/cpr/filesystem.h
- /usr/local/include/cpr/http_version.h
- /usr/local/include/cpr/interceptor.h
- /usr/local/include/cpr/interface.h
- /usr/local/include/cpr/limit_rate.h
- /usr/local/include/cpr/local_port.h
- /usr/local/include/cpr/local_port_range.h
- /usr/local/include/cpr/low_speed.h
- /usr/local/include/cpr/multipart.h
- /usr/local/include/cpr/multiperform.h
- /usr/local/include/cpr/parameters.h
- /usr/local/include/cpr/payload.h
- /usr/local/include/cpr/proxies.h
- /usr/local/include/cpr/proxyauth.h
- /usr/local/include/cpr/range.h
- /usr/local/include/cpr/redirect.h
- /usr/local/include/cpr/reserve_size.h
- /usr/local/include/cpr/resolve.h
- /usr/local/include/cpr/response.h
- /usr/local/include/cpr/secure_string.h
- /usr/local/include/cpr/session.h
- /usr/local/include/cpr/singleton.h
- /usr/local/include/cpr/ssl_ctx.h
- /usr/local/include/cpr/ssl_options.h
- /usr/local/include/cpr/status_codes.h
- /usr/local/include/cpr/threadpool.h
- /usr/local/include/cpr/timeout.h
- /usr/local/include/cpr/unix_socket.h
- /usr/local/include/cpr/user_agent.h
- /usr/local/include/cpr/util.h
- /usr/local/include/cpr/verbose.h
 
 CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
@@ -1301,8 +1317,13 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/popcount.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit/rotate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bit_reference
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/chars_format.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/tables.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_base_10.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_floating_point.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_integral.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_result.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/traits.h
@@ -1313,12 +1334,15 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/day.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/duration.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/file_clock.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/formatter.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/hh_mm_ss.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/high_resolution_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/month_weekday.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/monthday.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/ostream.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/parser_std_format_spec.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/statically_widen.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/steady_clock.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/system_clock.h
@@ -1392,20 +1416,31 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/buffer.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/enable_insertable.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/extended_grapheme_cluster_table.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg_store.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_args.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_error.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_functions.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_fwd.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_parse_context.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_to_n_result.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_bool.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_char.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_floating_point.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integer.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integral.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_output.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_pointer.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_string.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/parser_std_format_spec.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/unicode.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/width_estimation_table.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_function.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/binary_negate.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__functional/bind.h
@@ -1442,6 +1477,7 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/memory_resource.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/ostream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/pair.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/span.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/sstream.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/streambuf.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/string.h
@@ -1473,6 +1509,7 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_swap.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_traits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iterator_with_data.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/mergeable.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_iterator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/move_sentinel.h
@@ -1549,17 +1586,47 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__random/uniform_random_bit_generator.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/access.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/all.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/as_rvalue_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/common_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/concepts.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/container_compatible_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/counted.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/dangling.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/drop_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/elements_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/empty_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/enable_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/filter_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/from_range.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/iota_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/istream_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/join_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/lazy_split_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/movable_box.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/non_propagating_cache.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/owning_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/range_adaptor.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rbegin.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/ref_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/rend.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/repeat_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/reverse_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/single_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/size.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/split_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/subrange.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/take_while_view.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/to.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/transform_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/view_interface.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/views.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__ranges/zip_view.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__split_buffer
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__std_mbstate_t.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__string/char_traits.h
@@ -1757,6 +1824,7 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cctype
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cerrno
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/climits
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/clocale
@@ -1804,9 +1872,11 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/optional
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ostream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ranges
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/ratio
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/regex
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set
+ /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/span
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdexcept
@@ -1823,7 +1893,6 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/type_traits
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/typeinfo
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_map
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/utility
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/valarray
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/variant
@@ -1832,15 +1901,6 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wchar.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/ctype.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/curl.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/curlver.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/easy.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/header.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/multi.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/options.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/system.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/urlapi.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/websockets.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/errno.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/libkern/arm/OSByteOrder.h
@@ -1982,61 +2042,67 @@ CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdint.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-build/cpr_generated_includes/cpr/cprver.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/accept_encoding.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/api.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/async.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/async_wrapper.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/auth.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/bearer.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/body.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/buffer.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/callback.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cert_info.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/connect_timeout.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cookies.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cpr.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cprtypes.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curl_container.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curlholder.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curlmultiholder.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/error.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/file.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/filesystem.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/http_version.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/interceptor.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/interface.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/limit_rate.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/local_port.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/local_port_range.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/low_speed.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/multipart.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/multiperform.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/parameters.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/payload.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/proxies.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/proxyauth.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/range.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/redirect.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/reserve_size.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/resolve.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/response.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/session.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/singleton.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/ssl_ctx.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/ssl_options.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/status_codes.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/threadpool.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/timeout.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/unix_socket.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/user_agent.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/util.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/verbose.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/curl.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/curlver.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/easy.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/multi.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/options.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/system.h
+ /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/urlapi.h
  /Users/ciarangaffney/TradeIQ/src/external/dotenv.h
  /Users/ciarangaffney/TradeIQ/src/external/json.hpp
  /Users/ciarangaffney/TradeIQ/src/api/default_http_client.hpp
  /Users/ciarangaffney/TradeIQ/src/api/http_client.hpp
  /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.hpp
  /Users/ciarangaffney/TradeIQ/src/core/price_series.hpp
- /usr/local/include/cpr/accept_encoding.h
- /usr/local/include/cpr/api.h
- /usr/local/include/cpr/async.h
- /usr/local/include/cpr/async_wrapper.h
- /usr/local/include/cpr/auth.h
- /usr/local/include/cpr/bearer.h
- /usr/local/include/cpr/body.h
- /usr/local/include/cpr/buffer.h
- /usr/local/include/cpr/callback.h
- /usr/local/include/cpr/cert_info.h
- /usr/local/include/cpr/connect_timeout.h
- /usr/local/include/cpr/cookies.h
- /usr/local/include/cpr/cpr.h
- /usr/local/include/cpr/cprtypes.h
- /usr/local/include/cpr/cprver.h
- /usr/local/include/cpr/curl_container.h
- /usr/local/include/cpr/curlholder.h
- /usr/local/include/cpr/curlmultiholder.h
- /usr/local/include/cpr/error.h
- /usr/local/include/cpr/file.h
- /usr/local/include/cpr/filesystem.h
- /usr/local/include/cpr/http_version.h
- /usr/local/include/cpr/interceptor.h
- /usr/local/include/cpr/interface.h
- /usr/local/include/cpr/limit_rate.h
- /usr/local/include/cpr/local_port.h
- /usr/local/include/cpr/local_port_range.h
- /usr/local/include/cpr/low_speed.h
- /usr/local/include/cpr/multipart.h
- /usr/local/include/cpr/multiperform.h
- /usr/local/include/cpr/parameters.h
- /usr/local/include/cpr/payload.h
- /usr/local/include/cpr/proxies.h
- /usr/local/include/cpr/proxyauth.h
- /usr/local/include/cpr/range.h
- /usr/local/include/cpr/redirect.h
- /usr/local/include/cpr/reserve_size.h
- /usr/local/include/cpr/resolve.h
- /usr/local/include/cpr/response.h
- /usr/local/include/cpr/secure_string.h
- /usr/local/include/cpr/session.h
- /usr/local/include/cpr/singleton.h
- /usr/local/include/cpr/ssl_ctx.h
- /usr/local/include/cpr/ssl_options.h
- /usr/local/include/cpr/status_codes.h
- /usr/local/include/cpr/threadpool.h
- /usr/local/include/cpr/timeout.h
- /usr/local/include/cpr/unix_socket.h
- /usr/local/include/cpr/user_agent.h
- /usr/local/include/cpr/util.h
- /usr/local/include/cpr/verbose.h
 

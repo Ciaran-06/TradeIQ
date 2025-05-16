@@ -1,6 +1,7 @@
 CMakeFiles/api.dir/src/api/default_http_client.cpp.o: \
   /Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp \
-  /usr/local/include/cpr/cpr.h /usr/local/include/cpr/api.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cpr.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/api.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -281,6 +282,14 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/get.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/array.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/subrange.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/invocable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/predicate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/regular.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/semiregular.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__fwd/tuple.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_element.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tuple/tuple_indices.h \
@@ -293,14 +302,6 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iterator_operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/iter_swap.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/concepts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/derived_from.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/invocable.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/predicate.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/regular.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/semiregular.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__concepts/relation.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/iter_move.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__iterator/advance.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/convert_to_integral.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__utility/unreachable.h \
@@ -901,6 +902,32 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/this_thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__thread/thread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/sstream \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/async.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/async_wrapper.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/response.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cert_info.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cookies.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curlholder.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/curl.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/curlver.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/system.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/socket.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/constrained_ctypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_param.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_param.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/net/net_kev.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sa_family_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_socklen_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_iovec_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/easy.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/multi.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/urlapi.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/curl-src/include/curl/options.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -917,37 +944,27 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /usr/local/include/cpr/async.h /usr/local/include/cpr/async_wrapper.h \
-  /usr/local/include/cpr/singleton.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cassert \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/assert.h \
-  /usr/local/include/cpr/threadpool.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
-  /usr/local/include/cpr/auth.h /usr/local/include/cpr/util.h \
-  /usr/local/include/cpr/callback.h /usr/local/include/cpr/cprtypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/curl.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/curlver.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/system.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/socket.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/constrained_ctypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/machine/_param.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/arm/_param.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/net/net_kev.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_sa_family_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_socklen_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_iovec_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_timeval64.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_select.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/easy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/multi.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/urlapi.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/options.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/header.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/curl/websockets.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/formatter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/ostream.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_functions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_arg_store.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_args.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/format_context.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_char.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/write_escaped.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/escaped_output_table.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_floating_point.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/chars_format.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars_floating_point.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_integer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_pointer.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__format/formatter_string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__chrono/parser_std_format_spec.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/charconv \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_integral.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/from_chars_result.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__charconv/to_chars.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/cprtypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__tree \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/numeric \
@@ -963,32 +980,51 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /usr/local/include/cpr/cookies.h /usr/local/include/cpr/curlholder.h \
-  /usr/local/include/cpr/secure_string.h /usr/local/include/cpr/bearer.h \
-  /usr/local/include/cpr/filesystem.h /usr/local/include/cpr/multipart.h \
-  /usr/local/include/cpr/buffer.h /usr/local/include/cpr/file.h \
-  /usr/local/include/cpr/multiperform.h \
-  /usr/local/include/cpr/curlmultiholder.h \
-  /usr/local/include/cpr/response.h /usr/local/include/cpr/cert_info.h \
-  /usr/local/include/cpr/error.h /usr/local/include/cpr/ssl_options.h \
-  /usr/local/include/cpr/session.h \
-  /usr/local/include/cpr/accept_encoding.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/unordered_set \
-  /usr/local/include/cpr/body.h /usr/local/include/cpr/connect_timeout.h \
-  /usr/local/include/cpr/timeout.h /usr/local/include/cpr/http_version.h \
-  /usr/local/include/cpr/interface.h /usr/local/include/cpr/limit_rate.h \
-  /usr/local/include/cpr/local_port.h \
-  /usr/local/include/cpr/local_port_range.h \
-  /usr/local/include/cpr/low_speed.h /usr/local/include/cpr/parameters.h \
-  /usr/local/include/cpr/curl_container.h \
-  /usr/local/include/cpr/payload.h /usr/local/include/cpr/proxies.h \
-  /usr/local/include/cpr/proxyauth.h /usr/local/include/cpr/range.h \
-  /usr/local/include/cpr/redirect.h \
-  /usr/local/include/cpr/reserve_size.h /usr/local/include/cpr/resolve.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/error.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/ssl_options.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/filesystem.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/util.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/callback.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/singleton.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/threadpool.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/condition_variable \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/queue \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/deque \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/auth.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/bearer.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/multipart.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/buffer.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/file.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/multiperform.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curlmultiholder.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/session.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/accept_encoding.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/body.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/connect_timeout.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/timeout.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/http_version.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/interface.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/limit_rate.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/local_port.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/local_port_range.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/low_speed.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/parameters.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/curl_container.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/payload.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/proxies.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/proxyauth.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/range.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/redirect.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/reserve_size.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/resolve.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/set \
-  /usr/local/include/cpr/unix_socket.h \
-  /usr/local/include/cpr/user_agent.h /usr/local/include/cpr/verbose.h \
-  /usr/local/include/cpr/cprver.h /usr/local/include/cpr/interceptor.h \
-  /usr/local/include/cpr/ssl_ctx.h /usr/local/include/cpr/status_codes.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/unix_socket.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/user_agent.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/verbose.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-build/cpr_generated_includes/cpr/cprver.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/interceptor.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/ssl_ctx.h \
+  /Users/ciarangaffney/TradeIQ/build/_deps/cpr-src/include/cpr/status_codes.h \
   /Users/ciarangaffney/TradeIQ/src/api/default_http_client.hpp \
   /Users/ciarangaffney/TradeIQ/src/api/http_client.hpp

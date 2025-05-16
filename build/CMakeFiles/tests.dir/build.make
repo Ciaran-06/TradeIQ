@@ -72,71 +72,154 @@ include CMakeFiles/tests.dir/flags.make
 CMakeFiles/tests.dir/codegen:
 .PHONY : CMakeFiles/tests.dir/codegen
 
-CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o: /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp
-CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -MF CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o.d -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp
+CMakeFiles/tests.dir/tests/core/test_capture.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_capture.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_capture.cpp
+CMakeFiles/tests.dir/tests/core/test_capture.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tests.dir/tests/core/test_capture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_capture.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_capture.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_capture.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_capture.cpp
 
-CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp > CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.i
+CMakeFiles/tests.dir/tests/core/test_capture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_capture.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_capture.cpp > CMakeFiles/tests.dir/tests/core/test_capture.cpp.i
 
-CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/test_tiingo_client.cpp -o CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.s
+CMakeFiles/tests.dir/tests/core/test_capture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_capture.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_capture.cpp -o CMakeFiles/tests.dir/tests/core/test_capture.cpp.s
 
-CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o: /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp
-CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o -MF CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o.d -o CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp
+CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_correlation.cpp
+CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_correlation.cpp
 
-CMakeFiles/tests.dir/tests/test_stats_engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test_stats_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp > CMakeFiles/tests.dir/tests/test_stats_engine.cpp.i
+CMakeFiles/tests.dir/tests/core/test_correlation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_correlation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_correlation.cpp > CMakeFiles/tests.dir/tests/core/test_correlation.cpp.i
 
-CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/test_stats_engine.cpp -o CMakeFiles/tests.dir/tests/test_stats_engine.cpp.s
+CMakeFiles/tests.dir/tests/core/test_correlation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_correlation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_correlation.cpp -o CMakeFiles/tests.dir/tests/core/test_correlation.cpp.s
 
-CMakeFiles/tests.dir/tests/test_math_utils.cpp.o: CMakeFiles/tests.dir/flags.make
-CMakeFiles/tests.dir/tests/test_math_utils.cpp.o: /Users/ciarangaffney/TradeIQ/tests/test_math_utils.cpp
-CMakeFiles/tests.dir/tests/test_math_utils.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/tests/test_math_utils.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/test_math_utils.cpp.o -MF CMakeFiles/tests.dir/tests/test_math_utils.cpp.o.d -o CMakeFiles/tests.dir/tests/test_math_utils.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/test_math_utils.cpp
+CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_distribution.cpp
+CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_distribution.cpp
 
-CMakeFiles/tests.dir/tests/test_math_utils.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/test_math_utils.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/test_math_utils.cpp > CMakeFiles/tests.dir/tests/test_math_utils.cpp.i
+CMakeFiles/tests.dir/tests/core/test_distribution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_distribution.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_distribution.cpp > CMakeFiles/tests.dir/tests/core/test_distribution.cpp.i
 
-CMakeFiles/tests.dir/tests/test_math_utils.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/test_math_utils.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/test_math_utils.cpp -o CMakeFiles/tests.dir/tests/test_math_utils.cpp.s
+CMakeFiles/tests.dir/tests/core/test_distribution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_distribution.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_distribution.cpp -o CMakeFiles/tests.dir/tests/core/test_distribution.cpp.s
+
+CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_drawdowns.cpp
+CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_drawdowns.cpp
+
+CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_drawdowns.cpp > CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.i
+
+CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_drawdowns.cpp -o CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.s
+
+CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_ratios.cpp
+CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_ratios.cpp
+
+CMakeFiles/tests.dir/tests/core/test_ratios.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_ratios.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_ratios.cpp > CMakeFiles/tests.dir/tests/core/test_ratios.cpp.i
+
+CMakeFiles/tests.dir/tests/core/test_ratios.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_ratios.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_ratios.cpp -o CMakeFiles/tests.dir/tests/core/test_ratios.cpp.s
+
+CMakeFiles/tests.dir/tests/core/test_returns.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_returns.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_returns.cpp
+CMakeFiles/tests.dir/tests/core/test_returns.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tests.dir/tests/core/test_returns.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_returns.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_returns.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_returns.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_returns.cpp
+
+CMakeFiles/tests.dir/tests/core/test_returns.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_returns.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_returns.cpp > CMakeFiles/tests.dir/tests/core/test_returns.cpp.i
+
+CMakeFiles/tests.dir/tests/core/test_returns.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_returns.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_returns.cpp -o CMakeFiles/tests.dir/tests/core/test_returns.cpp.s
+
+CMakeFiles/tests.dir/tests/core/test_utils.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_utils.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_utils.cpp
+CMakeFiles/tests.dir/tests/core/test_utils.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tests.dir/tests/core/test_utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_utils.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_utils.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_utils.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_utils.cpp
+
+CMakeFiles/tests.dir/tests/core/test_utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_utils.cpp > CMakeFiles/tests.dir/tests/core/test_utils.cpp.i
+
+CMakeFiles/tests.dir/tests/core/test_utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_utils.cpp -o CMakeFiles/tests.dir/tests/core/test_utils.cpp.s
+
+CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o: CMakeFiles/tests.dir/flags.make
+CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o: /Users/ciarangaffney/TradeIQ/tests/core/test_volatility.cpp
+CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o: CMakeFiles/tests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o -MF CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o.d -o CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o -c /Users/ciarangaffney/TradeIQ/tests/core/test_volatility.cpp
+
+CMakeFiles/tests.dir/tests/core/test_volatility.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/tests.dir/tests/core/test_volatility.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/tests/core/test_volatility.cpp > CMakeFiles/tests.dir/tests/core/test_volatility.cpp.i
+
+CMakeFiles/tests.dir/tests/core/test_volatility.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/tests.dir/tests/core/test_volatility.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/tests/core/test_volatility.cpp -o CMakeFiles/tests.dir/tests/core/test_volatility.cpp.s
 
 # Object files for target tests
 tests_OBJECTS = \
-"CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o" \
-"CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o" \
-"CMakeFiles/tests.dir/tests/test_math_utils.cpp.o"
+"CMakeFiles/tests.dir/tests/core/test_capture.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_returns.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_utils.cpp.o" \
+"CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o"
 
 # External object files for target tests
 tests_EXTERNAL_OBJECTS =
 
-bin/tests: CMakeFiles/tests.dir/tests/test_tiingo_client.cpp.o
-bin/tests: CMakeFiles/tests.dir/tests/test_stats_engine.cpp.o
-bin/tests: CMakeFiles/tests.dir/tests/test_math_utils.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_capture.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_correlation.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_distribution.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_drawdowns.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_ratios.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_returns.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_utils.cpp.o
+bin/tests: CMakeFiles/tests.dir/tests/core/test_volatility.cpp.o
 bin/tests: CMakeFiles/tests.dir/build.make
 bin/tests: libapi.a
 bin/tests: libcore.a
+bin/tests: libstats.a
+bin/tests: libcli.a
 bin/tests: libmath_utils.a
-bin/tests: /usr/local/lib/libCatch2Main.a
-bin/tests: /usr/local/lib/libcpr.a
-bin/tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
-bin/tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libcurl.tbd
-bin/tests: /usr/local/lib/libCatch2.a
+bin/tests: lib/libgtest_main.1.14.0.dylib
+bin/tests: _deps/cpr-build/cpr/libcpr.1.10.4.dylib
+bin/tests: _deps/curl-build/lib/libcurl.dylib
+bin/tests: /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libz.tbd
+bin/tests: /opt/homebrew/lib/libssh2.dylib
+bin/tests: lib/libgtest.1.14.0.dylib
 bin/tests: CMakeFiles/tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin/tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable bin/tests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

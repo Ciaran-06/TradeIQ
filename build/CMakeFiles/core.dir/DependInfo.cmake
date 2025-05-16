@@ -9,7 +9,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ciarangaffney/TradeIQ/src/core/price_series.cpp" "CMakeFiles/core.dir/src/core/price_series.cpp.o" "gcc" "CMakeFiles/core.dir/src/core/price_series.cpp.o.d"
-  "/Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp" "CMakeFiles/core.dir/src/core/stats_engine.cpp.o" "gcc" "CMakeFiles/core.dir/src/core/stats_engine.cpp.o.d"
   "/Users/ciarangaffney/TradeIQ/src/core/strategy_engine.cpp" "CMakeFiles/core.dir/src/core/strategy_engine.cpp.o" "gcc" "CMakeFiles/core.dir/src/core/strategy_engine.cpp.o.d"
   )
 

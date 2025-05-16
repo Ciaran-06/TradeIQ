@@ -407,7 +407,7 @@ internal::CartesianProductHolder<Generator...> Combine(const Generator&... g) {
   return internal::CartesianProductHolder<Generator...>(g...);
 }
 
-// ConvertGenerator() wraps a parameter generator in order to cast each prduced
+// ConvertGenerator() wraps a parameter generator in order to cast each produced
 // value through a known type before supplying it to the test suite
 //
 // Synopsis:
@@ -449,7 +449,8 @@ internal::ParamConverterGenerator<T> ConvertGenerator(
 
 #define TEST_P(test_suite_name, test_name)                                     \
   class GTEST_TEST_CLASS_NAME_(test_suite_name, test_name)                     \
-      : public test_suite_name, private ::testing::internal::GTestNonCopyable {\
+      : public test_suite_name,                                                \
+        private ::testing::internal::GTestNonCopyable {                        \
    public:                                                                     \
     GTEST_TEST_CLASS_NAME_(test_suite_name, test_name)() {}                    \
     void TestBody() override;                                                  \

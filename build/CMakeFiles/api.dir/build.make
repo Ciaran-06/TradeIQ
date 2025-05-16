@@ -72,24 +72,10 @@ include CMakeFiles/api.dir/flags.make
 CMakeFiles/api.dir/codegen:
 .PHONY : CMakeFiles/api.dir/codegen
 
-CMakeFiles/api.dir/src/api/tiingo_client.cpp.o: CMakeFiles/api.dir/flags.make
-CMakeFiles/api.dir/src/api/tiingo_client.cpp.o: /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
-CMakeFiles/api.dir/src/api/tiingo_client.cpp.o: CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/api.dir/src/api/tiingo_client.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/api.dir/src/api/tiingo_client.cpp.o -MF CMakeFiles/api.dir/src/api/tiingo_client.cpp.o.d -o CMakeFiles/api.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
-
-CMakeFiles/api.dir/src/api/tiingo_client.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/src/api/tiingo_client.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp > CMakeFiles/api.dir/src/api/tiingo_client.cpp.i
-
-CMakeFiles/api.dir/src/api/tiingo_client.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/src/api/tiingo_client.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp -o CMakeFiles/api.dir/src/api/tiingo_client.cpp.s
-
 CMakeFiles/api.dir/src/api/default_http_client.cpp.o: CMakeFiles/api.dir/flags.make
 CMakeFiles/api.dir/src/api/default_http_client.cpp.o: /Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp
 CMakeFiles/api.dir/src/api/default_http_client.cpp.o: CMakeFiles/api.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/api.dir/src/api/default_http_client.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/api.dir/src/api/default_http_client.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/api.dir/src/api/default_http_client.cpp.o -MF CMakeFiles/api.dir/src/api/default_http_client.cpp.o.d -o CMakeFiles/api.dir/src/api/default_http_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp
 
 CMakeFiles/api.dir/src/api/default_http_client.cpp.i: cmake_force
@@ -100,16 +86,30 @@ CMakeFiles/api.dir/src/api/default_http_client.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/src/api/default_http_client.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/api/default_http_client.cpp -o CMakeFiles/api.dir/src/api/default_http_client.cpp.s
 
+CMakeFiles/api.dir/src/api/tiingo_client.cpp.o: CMakeFiles/api.dir/flags.make
+CMakeFiles/api.dir/src/api/tiingo_client.cpp.o: /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
+CMakeFiles/api.dir/src/api/tiingo_client.cpp.o: CMakeFiles/api.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/api.dir/src/api/tiingo_client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/api.dir/src/api/tiingo_client.cpp.o -MF CMakeFiles/api.dir/src/api/tiingo_client.cpp.o.d -o CMakeFiles/api.dir/src/api/tiingo_client.cpp.o -c /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp
+
+CMakeFiles/api.dir/src/api/tiingo_client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/api.dir/src/api/tiingo_client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp > CMakeFiles/api.dir/src/api/tiingo_client.cpp.i
+
+CMakeFiles/api.dir/src/api/tiingo_client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/api.dir/src/api/tiingo_client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/api/tiingo_client.cpp -o CMakeFiles/api.dir/src/api/tiingo_client.cpp.s
+
 # Object files for target api
 api_OBJECTS = \
-"CMakeFiles/api.dir/src/api/tiingo_client.cpp.o" \
-"CMakeFiles/api.dir/src/api/default_http_client.cpp.o"
+"CMakeFiles/api.dir/src/api/default_http_client.cpp.o" \
+"CMakeFiles/api.dir/src/api/tiingo_client.cpp.o"
 
 # External object files for target api
 api_EXTERNAL_OBJECTS =
 
-libapi.a: CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
 libapi.a: CMakeFiles/api.dir/src/api/default_http_client.cpp.o
+libapi.a: CMakeFiles/api.dir/src/api/tiingo_client.cpp.o
 libapi.a: CMakeFiles/api.dir/build.make
 libapi.a: CMakeFiles/api.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libapi.a"

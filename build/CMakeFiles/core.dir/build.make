@@ -86,24 +86,10 @@ CMakeFiles/core.dir/src/core/price_series.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/core/price_series.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/price_series.cpp -o CMakeFiles/core.dir/src/core/price_series.cpp.s
 
-CMakeFiles/core.dir/src/core/stats_engine.cpp.o: CMakeFiles/core.dir/flags.make
-CMakeFiles/core.dir/src/core/stats_engine.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp
-CMakeFiles/core.dir/src/core/stats_engine.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/src/core/stats_engine.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/core/stats_engine.cpp.o -MF CMakeFiles/core.dir/src/core/stats_engine.cpp.o.d -o CMakeFiles/core.dir/src/core/stats_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp
-
-CMakeFiles/core.dir/src/core/stats_engine.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/core.dir/src/core/stats_engine.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp > CMakeFiles/core.dir/src/core/stats_engine.cpp.i
-
-CMakeFiles/core.dir/src/core/stats_engine.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/core.dir/src/core/stats_engine.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ciarangaffney/TradeIQ/src/core/stats_engine.cpp -o CMakeFiles/core.dir/src/core/stats_engine.cpp.s
-
 CMakeFiles/core.dir/src/core/strategy_engine.cpp.o: CMakeFiles/core.dir/flags.make
 CMakeFiles/core.dir/src/core/strategy_engine.cpp.o: /Users/ciarangaffney/TradeIQ/src/core/strategy_engine.cpp
 CMakeFiles/core.dir/src/core/strategy_engine.cpp.o: CMakeFiles/core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/core.dir/src/core/strategy_engine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/core.dir/src/core/strategy_engine.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/core.dir/src/core/strategy_engine.cpp.o -MF CMakeFiles/core.dir/src/core/strategy_engine.cpp.o.d -o CMakeFiles/core.dir/src/core/strategy_engine.cpp.o -c /Users/ciarangaffney/TradeIQ/src/core/strategy_engine.cpp
 
 CMakeFiles/core.dir/src/core/strategy_engine.cpp.i: cmake_force
@@ -117,18 +103,16 @@ CMakeFiles/core.dir/src/core/strategy_engine.cpp.s: cmake_force
 # Object files for target core
 core_OBJECTS = \
 "CMakeFiles/core.dir/src/core/price_series.cpp.o" \
-"CMakeFiles/core.dir/src/core/stats_engine.cpp.o" \
 "CMakeFiles/core.dir/src/core/strategy_engine.cpp.o"
 
 # External object files for target core
 core_EXTERNAL_OBJECTS =
 
 libcore.a: CMakeFiles/core.dir/src/core/price_series.cpp.o
-libcore.a: CMakeFiles/core.dir/src/core/stats_engine.cpp.o
 libcore.a: CMakeFiles/core.dir/src/core/strategy_engine.cpp.o
 libcore.a: CMakeFiles/core.dir/build.make
 libcore.a: CMakeFiles/core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libcore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/ciarangaffney/TradeIQ/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/core.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/core.dir/link.txt --verbose=$(VERBOSE)
 

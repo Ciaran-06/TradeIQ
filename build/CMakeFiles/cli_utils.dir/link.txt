@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcli_utils.a CMakeFiles/cli_utils.dir/src/cli/matrix_printer.cpp.o
-/usr/bin/ranlib libcli_utils.a

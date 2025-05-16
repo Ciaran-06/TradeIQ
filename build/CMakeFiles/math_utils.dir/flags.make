@@ -4,9 +4,9 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/src/utils
+CXX_INCLUDES = -I/Users/ciarangaffney/TradeIQ/src -I/Users/ciarangaffney/TradeIQ/src/api -I/Users/ciarangaffney/TradeIQ/src/cli -I/Users/ciarangaffney/TradeIQ/src/core -I/Users/ciarangaffney/TradeIQ/src/stats -I/Users/ciarangaffney/TradeIQ/src/utils -I/Users/ciarangaffney/TradeIQ/src/external -I/Users/ciarangaffney/TradeIQ/tests/include
 
-CXX_FLAGSarm64 = -std=gnu++17 -arch arm64
+CXX_FLAGSarm64 = -O3 -DNDEBUG -std=gnu++20 -arch arm64
 
-CXX_FLAGS = -std=gnu++17 -arch arm64
+CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -arch arm64
 

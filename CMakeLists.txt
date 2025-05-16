@@ -1,79 +1,106 @@
-cmake_minimum_required(VERSION 3.14)
+cmake_minimum_required(VERSION 3.16)
 project(TradeIQ)
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_CXX_STANDARD 20)
+enable_testing()
+include(CTest)
 
-# Find dependencies
-find_package(cpr REQUIRED)
-find_package(Catch2 3 REQUIRED)
-
-# Include dirs
-include_directories(src)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/external)
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src/utils)
-
+# ========================================================
+# Include FetchContent early
+# ========================================================
 include(FetchContent)
+
+# ========================================================
+# Download GoogleTest
+# ========================================================
 FetchContent_Declare(
   googletest
-  URL https://github.com/google/googletest/archive/03597a01ee50ed33e9dfd640b249b4be3799d395.zip
+  URL https://github.com/google/googletest/archive/refs/tags/v1.14.0.zip
 )
+
 # For Windows: Prevent overriding the parent project's compiler/linker settings
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+
 FetchContent_MakeAvailable(googletest)
 
-# Core library
-add_library(core
-    src/core/price_series.cpp
-    src/core/stats_engine.cpp
-    src/core/strategy_engine.cpp
+# ========================================================
+# Fetch CPR (C++ Requests)
+# ========================================================
+FetchContent_Declare(
+  cpr
+  GIT_REPOSITORY https://github.com/libcpr/cpr.git
+  GIT_TAG 1.10.4
 )
 
-# Math utilities library
-add_library(math_utils
-    src/utils/math_utils.cpp
+FetchContent_MakeAvailable(cpr)
+
+# ========================================================
+# Include directories
+# ========================================================
+include_directories(
+  src
+  src/api
+  src/cli
+  src/core
+  src/stats
+  src/utils
+  src/external
+  tests/include
 )
 
-target_link_libraries(core PUBLIC math_utils)
+# ========================================================
+# Source files
+# ========================================================
+file(GLOB_RECURSE API_SRC src/api/*.cpp)
+file(GLOB_RECURSE CORE_SRC src/core/*.cpp)
+file(GLOB_RECURSE STATS_SRC src/stats/*.cpp)
+file(GLOB_RECURSE CLI_SRC src/cli/*.cpp)
+file(GLOB_RECURSE UTILS_SRC src/utils/*.cpp)
+file(GLOB_RECURSE MAIN_SRC src/main.cpp)
 
-# API library
-add_library(api
-    src/api/tiingo_client.cpp
-    src/api/default_http_client.cpp
+# ========================================================
+# Libraries
+# ========================================================
+add_library(api STATIC ${API_SRC})
+target_link_libraries(api PUBLIC cpr::cpr)
+
+add_library(core STATIC ${CORE_SRC})
+add_library(stats STATIC ${STATS_SRC})
+add_library(cli STATIC ${CLI_SRC})
+add_library(math_utils STATIC ${UTILS_SRC})
+
+# ========================================================
+# Main Executable
+# ========================================================
+add_executable(main_exec ${MAIN_SRC})
+target_link_libraries(main_exec
+  PRIVATE api core stats cli math_utils
+)
+set_target_properties(main_exec PROPERTIES
+  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
 )
 
-target_link_libraries(api PUBLIC core cpr::cpr)
-
-# CLI utils (e.g., matrix printer)
-add_library(cli_utils
-    src/cli/matrix_printer.cpp
-)
-
-target_link_libraries(cli_utils PUBLIC core)
-
-# Main executable
-add_executable(main
-    src/main.cpp
-)
-
-target_link_libraries(main PRIVATE api core cli_utils cpr::cpr)
-
+# ========================================================
 # Tests
-enable_testing()
+# ========================================================
+file(GLOB_RECURSE TEST_SRC tests/*.cpp)
 
-add_executable(tests
-    tests/test_tiingo_client.cpp
-    tests/test_stats_engine.cpp
-    tests/test_math_utils.cpp
-)
+add_executable(tests ${TEST_SRC})
 
 target_link_libraries(tests
-    PRIVATE
+  PRIVATE
     api
     core
+    stats
+    cli
     math_utils
-    Catch2::Catch2WithMain
+    gtest
+    gtest_main
 )
 
-include(CTest)
+# Put the test binary in the bin/ directory
+set_target_properties(tests PROPERTIES
+  RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin
+)
+
+add_test(NAME AllTests COMMAND tests)

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libstats.a CMakeFiles/stats.dir/src/stats/caputre.cpp.o CMakeFiles/stats.dir/src/stats/correlation.cpp.o CMakeFiles/stats.dir/src/stats/distribution.cpp.o CMakeFiles/stats.dir/src/stats/drawdowns.cpp.o CMakeFiles/stats.dir/src/stats/ratios.cpp.o CMakeFiles/stats.dir/src/stats/returns.cpp.o CMakeFiles/stats.dir/src/stats/utils.cpp.o CMakeFiles/stats.dir/src/stats/volatility.cpp.o
+/usr/bin/ranlib libstats.a

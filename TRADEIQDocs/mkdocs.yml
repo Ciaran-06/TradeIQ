@@ -1,0 +1,6 @@
+site_name: TradeIQ Docs
+nav:
+  - Home: index.md
+  - Stats Engine: stats/STATS_OVERVIEW.md
+theme:
+  name: material
